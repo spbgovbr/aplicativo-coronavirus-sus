@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "objectId": "9zoGaxz6f2",
+      "titulo": "Avalie seus sintomas e veja recomendações",
+      "desc": "Faça uma auto-avaliação do seu estado de saúde e saiba mais sobre os procedimentos do COVID19.",
+      "ordem": 0,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-1.png"
+      },
+      "createdAt": "2020-04-07T19:54:21.609Z",
+      "updatedAt": "2020-04-07T20:16:11.992Z"
+    },
+    {
+      "objectId": "6n8nPsUdJl",
+      "titulo": "Encontre unidades de saúde próximas",
+      "desc": "Busque as unidades de saúde públicas próximas da sua localização caso precise de ajuda médica.",
+      "ordem": 1,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-2.png"
+      },
+      "createdAt": "2020-04-07T20:01:51.142Z",
+      "updatedAt": "2020-04-07T20:01:51.142Z"
+    },
+    {
+      "objectId": "RHX4NEv5eB",
+      "titulo": "Acompanhe dicas e procedimentos oficiais",
+      "desc": "Fuja das Fake News e acesse informações oficias do Ministério da Saúde sobre o COVID19.",
+      "ordem": 2,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-3.png"
+      },
+      "createdAt": "2020-04-07T20:02:33.313Z",
+      "updatedAt": "2020-04-07T20:02:33.313Z"
+    }
+  ]
+}

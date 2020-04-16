@@ -1,0 +1,91 @@
+<ion-content>
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+  </div>
+
+
+
+  <div class="skeleton"
+       aria-hidden="true"
+       *ngIf="loading">
+
+    <h1>
+      <ion-skeleton-text style="width: 100%; height: 24px;"
+                         animated></ion-skeleton-text>
+      <ion-skeleton-text style="width: 45%; height: 24px;"
+                         animated></ion-skeleton-text>
+    </h1>
+
+    <h2>
+      <ion-skeleton-text style="width: 70%; height: 20px;"
+                         animated></ion-skeleton-text>
+    </h2>
+
+    <div class="itens">
+      <div class="item"
+           *ngFor="let i of [0,1,2,3,4]">
+        <ion-skeleton-text style="width: 100%; height: 100%; margin: 0;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+
+    <h2>
+      <ion-skeleton-text style="width: 80%; height: 20px;"
+                         animated></ion-skeleton-text>
+    </h2>
+
+    <div class="itens">
+      <div class="item"
+           *ngFor="let i of [0,1,2,3]">
+        <ion-skeleton-text style="width: 100%; height: 100%; margin: 0;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+
+    <div class="confirmar"
+         slot="fixed">
+      <ion-skeleton-text style="width: 100%; height: 100%; margin: 0;"
+                         animated></ion-skeleton-text>
+    </div>
+
+  </div>
+
+
+  <h1 *ngIf="!loading">
+    {{'TESTE.TITULO'| translate}}
+  </h1>
+
+  <app-teste-passo-1 *ngIf="step === 1 && !loading"
+                     [sintomas]="sintomas"
+                     [duracoes]="duracoes"
+                     [duracaoSelecionada]="duracaoSelecionada"
+                     (selectSintomas)="selecionarSintoma($event)"
+                     (selectDuracao)="selecionarDuracao($event)"></app-teste-passo-1>
+
+  <app-teste-passo-2 *ngIf="step === 2 && !loading"
+                     [idades]="idades"
+                     [idadeSelecionada]="idadeSelecionada"
+                     [sexoSelecionado]="sexoSelecionado"
+                     (selectIdade)="selecionarIdade($event)"
+                     (selectSexo)="selecionarSexo($event)"></app-teste-passo-2>
+
+  <app-teste-passo-3 *ngIf="step === 3 && !loading"
+                     [doencas]="doencas"
+                     [sintomas]="sinais"
+                     (selectDoenca)="selecionarDoenca($event)"
+                     (selectSintoma)="selecionarSinal($event)"></app-teste-passo-3>
+
+  <div *ngIf="!loading"
+       class="confirmar ion-activatable"
+       role="button"
+       (click)="confirmarClicked()"
+       slot="fixed">
+    {{'TESTE.BOTAO' | translate}}
+  </div>
+
+</ion-content>

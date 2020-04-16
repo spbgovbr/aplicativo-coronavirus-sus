@@ -1,0 +1,194 @@
+<ion-content [scrollEvents]="true"
+             (ionScroll)="onScroll($event)">
+
+  <div class="header desktop-hidden"
+       slot="fixed"
+       [ngClass]="{'change-header': changeHeader }">
+
+    <div class="flex-header">
+      <div>
+        <h1 class="situacao-titulo">
+          <span>{{'SITUACAO.TITULO_PRIMARIO' | translate}}</span>
+          <br>
+          {{'SITUACAO.TITULO_SECUNDARIO' | translate}}
+        </h1>
+        <h2 class="situacao-sub-titulo">
+          {{'SITUACAO.SUBTITULO' | translate}}
+        </h2>
+      </div>
+      <div class="data"
+           *ngIf="dataAtualizacao">
+        {{'SITUACAO.ATUALIZADO' | translate}}{{' ' + horaAtualizacao}}
+        <br>
+        {{dataAtualizacao}}
+      </div>
+    </div>
+  </div>
+
+  <div class="data mobile-hidden"
+       *ngIf="dataAtualizacao">
+    {{'SITUACAO.ATUALIZADO' | translate}}{{' ' + horaAtualizacao}}
+    <br>
+    {{dataAtualizacao}}
+  </div>
+
+
+  <!-- skeleton -->
+  <div class="cards skeleton"
+       *ngIf="!portalGeral">
+    <div class="card confirmado">
+      <div class="numero">
+        <ion-skeleton-text style="width: 70px; height: 36px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="label">
+        <ion-skeleton-text style="width: 40px;"
+                           animated></ion-skeleton-text>
+        <ion-skeleton-text style="width: 80px;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+    <div class="card obitos">
+      <div class="numero">
+        <ion-skeleton-text style="width: 70px; height: 36px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="label">
+        <ion-skeleton-text style="width: 40px;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+    <div class="card letalitade">
+      <div class="numero">
+        <ion-skeleton-text style="width: 70px; height: 36px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="label">
+        <ion-skeleton-text style="width: 80px;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+    <div aria-hidden="true"
+         class="space-fix">fix</div>
+  </div>
+
+  <div class="cards"
+       *ngIf="portalGeral">
+    <div class="card confirmado">
+      <div class="numero">
+        {{portalGeral?.total_confirmado}}
+      </div>
+      <div class="label">
+        {{'SITUACAO.CASOS_CONFIRMADOS' | translate}}
+      </div>
+    </div>
+    <div class="card obitos">
+      <div class="numero">
+        {{portalGeral?.total_obitos}}
+      </div>
+      <div class="label">
+        {{'SITUACAO.OBITOS' | translate}}
+      </div>
+    </div>
+    <div class="card letalitade">
+      <div class="numero">
+        {{portalGeral?.total_letalidade}}
+      </div>
+      <div class="label">
+        {{'SITUACAO.LETALIDADE' | translate}}
+      </div>
+    </div>
+    <div aria-hidden="true"
+         class="space-fix">fix</div>
+  </div>
+
+  <div class="acesso-painel"
+       role="button"
+       (click)="acessoPainel()">
+    <div class="titulo-painel">
+      {{'SITUACAO.TEXTO_BANNER' | translate}}
+    </div>
+    <div class="logotipo-painel"></div>
+  </div>
+
+  <div class="pesquisar-situacao">
+    <ion-searchbar placeholder="{{'SITUACAO.PLACEHOLDER' | translate}}"
+                   mode="ios"
+                   [(ngModel)]="pesquisarString"
+                   (ionChange)="pesquisar()">
+    </ion-searchbar>
+    <div class="pesquisar-botao ion-activatable"
+         role="button"
+         (click)="pesquisar()">
+      <ion-icon src="./assets/images/dicas/busca.svg"></ion-icon>
+    </div>
+  </div>
+
+  <!-- skeleton -->
+  <ng-container *ngIf="!portalMapaFiltrado">
+    <div class="estado skeleton"
+         *ngFor="let i of [0,1,2]">
+      <ion-skeleton-text style="width: 180px; height: 26px;"
+                         animated></ion-skeleton-text>
+      <div class="infors">
+        <div class="confirmados">
+          <span>
+            <ion-skeleton-text style="width: 20px; height: 15px;"
+                               animated></ion-skeleton-text>
+          </span>
+          <ion-skeleton-text style="width: 60px;"
+                             animated></ion-skeleton-text>
+        </div>
+        <div class="obitos">
+          <span>
+            <ion-skeleton-text style="width: 20px; height: 15px;"
+                               animated></ion-skeleton-text>
+          </span>
+          <ion-skeleton-text style="width: 40px;"
+                             animated></ion-skeleton-text>
+        </div>
+        <div class="letalidade">
+          <span>
+            <ion-skeleton-text style="width: 20px; height: 15px;"
+                               animated></ion-skeleton-text>
+          </span>
+          <ion-skeleton-text style="width: 60px;"
+                             animated></ion-skeleton-text>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="portalMapaFiltrado">
+    <div class="estado"
+         *ngFor="let pM of portalMapaFiltrado">
+      {{pM.nome}}
+      <div class="infors">
+        <div class="confirmados">
+          <span>{{pM.qtd_confirmado}}</span>
+          {{'SITUACAO.CONFIRMADOS' | translate}}
+        </div>
+        <div class="obitos">
+          <span>{{pM.qtd_obito}}</span>
+          {{'SITUACAO.OBITOS' | translate}}
+        </div>
+        <div class="letalidade">
+          <span>{{pM.letalidade}}</span>
+          {{'SITUACAO.LETALIDADE' | translate}}
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="estado-vazio"
+       *ngIf="portalMapaFiltrado?.length === 0 && filtrado">
+    <div class="imagem"></div>
+    <div class="titulo">
+      {{'SITUACAO.ESTADO_VAZIO.TITULO' | translate}}
+    </div>
+    <div class="sub-titulo">
+      {{'SITUACAO.ESTADO_VAZIO.SUBTITULO' | translate}}
+    </div>
+  </div>
+
+</ion-content>

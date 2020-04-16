@@ -1,0 +1,383 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+// @font-face {
+//   font-family: 'CircularStd';
+//   font-style: normal;
+//   font-weight: 300;
+//   font-display: swap;
+//   src: local('rawline 300'), local('rawline-300'), url('assets/fonts/rawline-300.woff2') format('woff2');
+//   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// }
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('circularstd Book'), local('circularstd-Book'), url('assets/fonts/CircularStd-Book.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('circularstd medium'), local('circularstd-medium'), url('assets/fonts/CircularStd-Medium.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('circularstd bold'), local('circularstd-bold'), url('assets/fonts/CircularStd-Bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'CircularStd';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('circularstd black'), local('circularstd-black'), url('assets/fonts/CircularStd-Black.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+* {
+  font-size: 100%;
+  font-family: 'CircularStd', sans-serif;
+  letter-spacing: -0.27px;
+
+  .ion-activatable {
+    overflow: hidden;
+
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .ion-focused,
+  .ion-activated {
+    position: relative;
+
+    &:before {
+      pointer-events: none;
+      z-index: 999;
+      position: absolute;
+      content: '';
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(black, .2);
+    }
+  }
+}
+
+@media (min-width: 1100px) {
+  .desktop-hidden {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+ion-back-button {
+  color: #808080;
+}
+
+ion-tab-bar.mobile-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(black, .2);
+  contain: inherit !important;
+
+  ion-tab-button {
+    display: inline-block;
+    width: 80px;
+    height: 100%;
+  }
+
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #3D3099;
+  background-image: url('/assets/images/inicio/background.png');
+}
+
+ion-tab-bar.desktop-hidden {
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: white;
+  box-shadow: 0 -6px 16px 0 rgba(12, 83, 144, 0.10);
+  border-radius: 25px 25px 0 0;
+
+  ion-tab-button {
+    display: inline-block;
+    width: 20%;
+  }
+}
+
+
+
+@mixin lines($lines: 1, $lineHeight: 1.2) {
+  overflow: hidden;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: ellipsis;
+  display: block;
+  /*! autoprefixer: off */
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  max-height: $lines * $lineHeight + unquote('rem');
+}
+
+@for $i from 1 through 5 {
+  .lines-#{$i} {
+    @include lines($i);
+  }
+}
+
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadein;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  // opacity: 0; // for delay
+  // @for $i from 1 to 10 {
+  //   &:nth-child(#{$i}) {
+  //     animation-delay: $i * 25ms;
+  //   }
+  // }
+}
+
+.pesquisar-situacao,
+.pesquisar-dicas {
+  position: relative;
+
+  ion-searchbar {
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #ECF2F8;
+    border-radius: 15px;
+
+    --clear-button-color: #9A9EA2;
+
+    .searchbar-search-icon {
+      display: none !important;
+    }
+
+    .searchbar-input-container {
+      height: 55px;
+
+      .searchbar-input {
+        padding: 0 100px 0 20px !important;
+        background-color: transparent;
+      }
+
+      .searchbar-clear-button {
+        right: 60px;
+      }
+    }
+  }
+
+  .pesquisar-botao {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate3d(0, -50%, 0);
+    width: 55px;
+    height: 100%;
+    border-radius: 15px;
+
+    &.ion-activated:before {
+      background-color: rgba(black, .05);
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+      color: #9A9EA2;
+      font-size: 21px;
+    }
+  }
+}
+
+
+.modal-wrapper {
+  @media (min-width: 540px) {
+    border-radius: 20px !important;
+    width: 420px !important;
+    height: 80% !important;
+  }
+}
+
+.modal-permissao-localizacao,
+.modal-sem-conexao,
+.modal-permissao-notificacao,
+.modal-atendimento-pre-clinico-telefone,
+.modal-atendimento-pre-clinico {
+
+  .modal-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: calc(340px + var(--ion-safe-area-bottom));
+    border-radius: 30px 30px 0 0;
+
+    @media (min-width: 540px) {
+      width: 420px !important;
+      height: calc(340px + var(--ion-safe-area-bottom)) !important;
+      border-radius: 30px 30px 0 0 !important;
+    }
+  }
+
+  &.modal-atendimento-pre-clinico {
+    .modal-wrapper {
+      height: calc(440px + var(--ion-safe-area-bottom));
+
+      @media (min-width: 540px) {
+        height: calc(440px + var(--ion-safe-area-bottom)) !important;
+      }
+    }
+  }
+
+  &.modal-atendimento-pre-clinico-telefone {
+    .modal-wrapper {
+      height: calc(540px + var(--ion-safe-area-bottom));
+
+      @media (min-width: 540px) {
+        height: calc(540px + var(--ion-safe-area-bottom)) !important;
+      }
+    }
+  }
+}
+
+
+.stories-bullets-slides.swiper-container-horizontal,
+.onboard-bullets-slides.swiper-container-horizontal {
+  .swiper-pagination-bullets {
+    width: auto;
+    top: inherit;
+    left: 20px;
+    bottom: calc(40px + var(--ion-safe-area-bottom));
+
+    .swiper-pagination-bullet {
+      width: 25px;
+      height: 5px;
+      transition: all 0.2s ease-out;
+      opacity: 1;
+      background-color: rgba(black, .4);
+      border-radius: 3.5px;
+
+      &.swiper-pagination-bullet-active {
+        background-color: white;
+      }
+    }
+  }
+}
+
+.stories-bullets-slides.swiper-container-horizontal {
+  .swiper-pagination-bullets {
+    width: auto;
+    top: inherit;
+    left: 50%;
+    top: calc(60px + var(--ion-safe-area-top));
+    transform: translate3d(-50%, 0, 0);
+    bottom: inherit;
+
+    .swiper-pagination-bullet {
+      position: relative;
+      overflow: hidden;
+
+
+      &.swiper-pagination-bullet-active {
+        background-color: rgba(black, .4);
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+
+          animation-name: bullet-animacao;
+          animation-duration: 10s;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease-in-out;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active~.swiper-pagination-bullet {
+    background-color: white;
+  }
+}
+
+@keyframes bullet-animacao {
+  from {
+    transform: translate3d(0,0,0);
+  }
+
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}

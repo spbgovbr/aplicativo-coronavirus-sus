@@ -1,0 +1,18 @@
+{
+  "android": {
+    "release": {
+      "keystore": "xxxxxxxxxx",
+      "alias": "xxxxx",
+      "password": "xxxxxxxx",
+      "storePassword": "xxxxxxxx"
+    }
+  },
+  "ios": {
+    "release": {
+      "codeSignIdentitiy": "iPhone Distribution: MINISTERIO DA SAUDE",
+      "developmentTeam": "xxxxxxxx",
+      "packageType": "app-store",
+      "provisioningProfile": "xxxxxxxxxxx"
+    }
+  }
+}

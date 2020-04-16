@@ -1,0 +1,34 @@
+<div class="content">
+  <h2>
+    {{'TESTE.TESTE2.IDADE' | translate}}
+  </h2>
+
+  <div class="itens">
+    <div class="item ion-activatable"
+         role="button"
+         *ngFor="let item of idades"
+         [ngClass]="{'selecionado': idadeSelecionada?.objectId === item.objectId }"
+         (click)="selecionarIdade(item)">
+      {{item.nome}}
+    </div>
+  </div>
+
+  <h2>
+    {{'TESTE.TESTE2.SEXO.TITULO' | translate}}
+  </h2>
+
+  <div class="itens">
+    <div class="item ion-activatable"
+         role="button"
+         [ngClass]="{'selecionado': sexoSelecionado === 'masculino' }"
+         (click)="selecionarSexo('masculino')">
+      {{'TESTE.TESTE2.SEXO.MASCULINO' | translate}}
+    </div>
+    <div class="item ion-activatable"
+         role="button"
+         [ngClass]="{'selecionado': sexoSelecionado === 'feminino' }"
+         (click)="selecionarSexo('feminino')">
+      {{'TESTE.TESTE2.SEXO.FEMININO' | translate}}
+    </div>
+  </div>
+</div>

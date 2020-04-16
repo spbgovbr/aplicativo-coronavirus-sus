@@ -1,0 +1,484 @@
+@media (min-width: 540px) {
+  ion-content {
+    --padding-start: calc(45% - 200px);
+    --padding-end: calc(45% - 200px);
+  }
+}
+
+.background {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #3D3099;
+  background-image: url('/assets/images/inicio/background.png');
+  height: 50%;
+  width: 100%;
+}
+
+.header {
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+  width: 100%;
+  height: calc(60px + var(--ion-safe-area-top));
+  padding-top: var(--ion-safe-area-top);
+  background-color: rgba(black, .2);
+
+  transition: all ease 0.2s;
+
+  .background {
+    transition: all ease 0.2s;
+    z-index: -1;
+    opacity: 0;
+    height: calc(60px + var(--ion-safe-area-top));
+
+    &.change-header {
+      opacity: 1;
+    }
+  }
+
+  .logotipo {
+    flex: none;
+
+    overflow: hidden;
+    width: 160px;
+    height: 20px;
+
+    ion-icon {
+      color: white;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+ion-content {
+  z-index: 8;
+  position: relative;
+  --padding-top: calc(60px + var(--ion-safe-area-top));
+  --background: #EEEFF1;
+}
+
+.conteudo {
+  z-index: 8;
+  position: relative;
+
+  padding-bottom: 120px;
+
+  @media (min-width: 1100px) {
+    padding-bottom: 80px;
+  }
+
+  h1,
+  h2 {
+    margin: 0 auto;
+  }
+
+  .avaliacao {
+    padding: 20px 0;
+    text-align: center;
+
+    h1 {
+      font-size: 26.8px;
+      color: #FFFFFF;
+      letter-spacing: -0.42px;
+      text-align: center;
+
+      font-weight: 800;
+      line-height: 27px;
+    }
+
+    h2 {
+      font-size: 17px;
+      color: #FFFFFF;
+      letter-spacing: -0.26px;
+      text-align: center;
+      line-height: 20px;
+
+      max-width: 200px;
+      margin: 10px auto;
+    }
+
+    .botoes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: -10px;
+
+      .bem,
+      .mal {
+        overflow: hidden;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        width: calc(140px - 20px);
+        height: 48px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid white;
+        border-radius: 10px;
+
+        color: white;
+        font-size: 16px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        line-height: 22px;
+
+        &.ion-activated {
+          border: 1px solid #6EB434;
+        }
+
+        &.ion-activated:before {
+          background-color: rgba(#6EB434, .4);
+        }
+
+        &.mal.ion-activated:before {
+          background-color: rgba(#FF5992, .4);
+        }
+
+        &.mal.ion-activated {
+          border: 1px solid #FF5992;
+        }
+
+        ion-icon {
+          font-size: 24px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+
+  .conteudo-inner {
+    padding: 20px;
+    background: white;
+    border-radius: 30px 30px 0 0;
+
+    @media (min-width: 1100px) {
+      border-radius: 30px;
+    }
+
+    .ubs-noticias {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      margin: -10px;
+
+      .ubs,
+      .noticias {
+        overflow: hidden;
+
+        padding: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        margin: 10px;
+        width: calc(50% - 20px);
+        height: 160px;
+        border-radius: 17px;
+        text-align: center;
+
+        &.ion-activated:before {
+          border-radius: 17px;
+        }
+
+        .icone {
+          width: 30px;
+          height: 30px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: auto 30px;
+          background-color: transparent;
+          background-image: url('/assets/images/inicio/hospital.svg');
+        }
+
+        .titulo {
+          margin: 10px 0 5px 0;
+
+          color: #16222F;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: -0.39px;
+          line-height: 16px;
+        }
+
+        .sub-titulo {
+          color: #6591B8;
+          font-size: 12px;
+          font-weight: 500;
+          letter-spacing: -0.35px;
+          text-align: center;
+          line-height: 14px;
+
+          max-width: 80%;
+        }
+
+        &.ubs {
+          &.ion-activated:before {
+            background-color: rgba(#B5D8F7, .4);
+          }
+
+          border: 1px solid #B5D8F7;
+          box-shadow: 0 5px 13px 0 rgba(0, 136, 255, 0.13);
+        }
+
+        &.noticias {
+          &.ion-activated:before {
+            background-color: rgba(#B5D8F7, .4);
+          }
+
+          border: 1px solid #B5D8F7;
+          box-shadow: 0 5px 13px 0 rgba(0, 136, 255, 0.13);
+
+          .icone {
+            background-image: url('/assets/images/inicio/noticias.svg');
+          }
+
+          .sub-titulo {
+            color: #92B1CC;
+          }
+        }
+      }
+    }
+
+    .dicas-stories {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .stories-wrapper {
+        position: relative;
+
+        .numero {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+
+          animation: gradient 5s ease infinite;
+          background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+          background-size: 400% 400%;
+
+          font-weight: 800;
+          font-size: 10px;
+          color: white;
+          letter-spacing: -0.28px;
+          text-align: left;
+        }
+      }
+
+      .stories {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 60px;
+        height: 60px;
+        background-color: #B04FFF;
+        border-radius: 50%;
+
+        animation: gradient 5s ease infinite;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+
+        &.lido {
+          background: #eaeaea;
+        }
+
+        .stories-inner {
+          width: 54px;
+          height: 54px;
+          background-color: white;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 1px solid #E7F1FA;
+          border-radius: 50%;
+        }
+      }
+
+
+    }
+
+    .dicas-titulo {
+      font-weight: 400;
+      font-size: 22px;
+      color: #16222F;
+      letter-spacing: -0.64px;
+      line-height: 19px;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    .dicas-sub-titulo {
+      font-weight: 500;
+      font-size: 13px;
+      color: #8498AE;
+      letter-spacing: 0.01px;
+      text-align: left;
+      line-height: 19px;
+    }
+
+    .dicas {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+
+      &::-webkit-scrollbar {
+        height: 0px;
+        background: transparent;
+      }
+
+      .dica {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+
+        flex: none;
+
+        padding: 15px;
+
+        margin: 10px;
+        width: calc(50% - 20px);
+        min-height: 180px;
+        background: #DBEEFF;
+        border-radius: 15px;
+
+        font-weight: 800;
+        font-size: 18px;
+        color: #1F2C3A;
+        letter-spacing: -0.56px;
+        text-align: left;
+        line-height: 22px;
+
+        border: 1px solid white;
+
+        &.skeleton {
+          background-color: rgba(#eaeaea, .4);
+        }
+
+        &.ion-activated {
+          color: #0088FF;
+          border: 1px solid #0088FF;
+        }
+
+        &.ion-activated:before {
+          background-color: rgba(white, .3);
+        }
+
+        .icone {
+          width: 74px;
+          height: 74px;
+          background-size: 74px auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          background-color: #ABD8FF;
+        }
+      }
+    }
+
+    .ver-mais-dicas {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: -10px;
+
+      font-weight: 800;
+      font-size: 16px;
+      color: #0088FF;
+      letter-spacing: -0.27px;
+      text-align: left;
+      line-height: 19px;
+
+      height: 60px;
+      background: rgba(255, 255, 255, 0.73);
+      border: 1px solid #D0E3F4;
+      box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+      border-radius: 10px;
+
+      &.ion-activated {
+        border: 1px solid #0088FF;
+      }
+
+      &.ion-activated:before {
+        background-color: rgba(#0088FF, .4);
+      }
+    }
+
+    .logotipo-bottom {
+      overflow: hidden;
+      margin: 20px auto 0 auto;
+      width: 160px;
+      height: 20px;
+
+      ion-icon {
+        color: #90ACC6;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .versao {
+      font-size: 500;
+      font-size: 10.32px;
+      color: #90ACC6;
+      letter-spacing: -0.27px;
+      text-align: center;
+      line-height: 32.06px;
+    }
+
+    .logotipo-datasus {
+      overflow: hidden;
+      margin: 10px auto;
+      width: 100px;
+      height: 32px;
+
+      ion-icon {
+        color: #90ACC6;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

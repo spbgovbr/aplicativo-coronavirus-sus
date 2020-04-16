@@ -1,0 +1,41 @@
+<ion-content>
+
+  <div class="pular"
+       slot="fixed">
+    <ion-button fill="clear"
+                (click)="enter()">
+      {{'ONBOARD.PULAR' | translate}}
+    </ion-button>
+  </div>
+
+  <ion-slides #slides
+              pager="true"
+              class="onboard-bullets-slides"
+              (ionSlideDidChange)="slideDidChange()">
+
+    <ion-slide *ngFor="let onboard of onboards">
+      <div class="imagem"
+           [style.background-image]="'url(' + (onboard?.imagem?.url) + ')'"></div>
+      <div class="titulo">
+        {{onboard?.titulo}}
+      </div>
+      <div class="desc">
+        {{onboard?.desc}}
+      </div>
+      <div class="space"></div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div slot="fixed"
+       class="botoes">
+    <div class="botao ion-activatable"
+         role="button"
+         [class.full]="isEnd"
+         (click)="next()">
+      <ng-container *ngIf="!isEnd">{{'ONBOARD.PROXIMO' | translate}}</ng-container>
+      <ng-container *ngIf="isEnd">{{'ONBOARD.ENTRAR' | translate}}</ng-container>
+    </div>
+  </div>
+
+</ion-content>

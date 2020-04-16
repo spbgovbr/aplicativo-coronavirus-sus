@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "objectId": "OvUgy8mOeI",
+      "nome": "Doenças do Coração",
+      "createdAt": "2020-03-20T21:59:08.670Z",
+      "updatedAt": "2020-03-20T22:53:42.914Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "id1cJRD7AO",
+      "nome": "Pressão Alta",
+      "createdAt": "2020-03-20T21:59:17.487Z",
+      "updatedAt": "2020-03-20T22:31:23.403Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "qikaXkrW9S",
+      "nome": "Diabetes",
+      "createdAt": "2020-03-20T21:59:30.871Z",
+      "updatedAt": "2020-03-21T21:07:31.414Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "qqm7ECZFpe",
+      "nome": "Doença Respiratória Crônica",
+      "createdAt": "2020-03-20T21:59:47.218Z",
+      "updatedAt": "2020-03-20T22:31:37.986Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "aqRaUuLnjh",
+      "nome": "Doença Renal Crônica",
+      "createdAt": "2020-03-20T22:00:14.758Z",
+      "updatedAt": "2020-03-20T22:31:46.321Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "RNfV8BLy9K",
+      "nome": "Não possuo",
+      "createdAt": "2020-03-20T22:00:27.060Z",
+      "updatedAt": "2020-03-20T22:31:54.508Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

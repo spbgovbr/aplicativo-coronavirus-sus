@@ -1,0 +1,230 @@
+ion-content {
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.votlar {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  &.ion-activated:before {
+    border-radius: 0 0 0 30px;
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #808080;
+  }
+}
+
+.imagem {
+  margin: 10px auto;
+  width: 80px;
+  height: 80px;
+  background-size: 80px auto;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/modais/atendimento.svg');
+}
+
+.titulo {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 22.2px;
+  color: #16222F;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 30px;
+
+  span {
+    font-weight: 800;
+  }
+}
+
+.conteudo {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: #6B8097;
+  letter-spacing: -0.3px;
+  text-align: center;
+  line-height: 22px;
+
+  a {
+    color: #0088FF;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.box {
+  padding: 20px 10px;
+
+  background: #F3F6FE;
+  border: 1px solid #BFC4DB;
+  border-radius: 10px;
+
+  text-align: center;
+  color: #16222F;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.43px;
+
+  .inner {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  &.verde {
+    background: #EDFFDE;
+    border: 1px solid #C8E2B2;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: #6E8E54;
+    letter-spacing: -0.26px;
+    text-align: center;
+    line-height: 21px;
+
+    ion-icon {
+      font-weight: 700;
+      font-size: 32px;
+      color: #6EB434;
+    }
+
+    span {
+      display: block;
+      margin: 0 auto;
+      max-width: 240px;
+    }
+
+    .inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 10px;
+      font-weight: 800;
+      font-size: 22.2px;
+      color: #16222F;
+      letter-spacing: -0.5px;
+      text-align: center;
+      line-height: 25px;
+    }
+  }
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tipo-documento,
+.cpf {
+  margin: 20px 10px 10px 10px;
+
+  position: relative;
+
+  ion-input {
+    font-size: 18px;
+    color: #16222F;
+    letter-spacing: -0.34px;
+    
+
+    padding-left: 20px !important;
+    padding-right: 50px !important;
+
+    text-align: left;
+
+    height: 52px;
+    background: #FFFFFF;
+    border: 2px solid #D0DCE6;
+    border-radius: 10px;
+  }
+
+  &.tipo-documento {
+    ion-input {
+      margin-top: 10px;
+      padding: 0 20px !important;
+    }
+  }
+
+  .verificar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 44px;
+    height: 44px;
+    background: #0088FF;
+    border: 1px solid #0088FF;
+    border-radius: 6px;
+
+    ion-icon {
+      color: white;
+      font-size: 24px;
+    }
+  }
+}
+
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 10px 0 10px;
+  width: 100%;
+  height: 60px;
+  background: #0088FF;
+  box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+
+  &.nao {
+    color: #0088FF;
+    background-color: transparent;
+    background: rgba(220, 112, 112, 0.00);
+    border: 2px solid #0088FF;
+    border-radius: 10px;
+  }
+}
+
+.nao-possuo-cpf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6B8097;
+  letter-spacing: -0.26px;
+  text-align: center;
+  line-height: 21px;
+}

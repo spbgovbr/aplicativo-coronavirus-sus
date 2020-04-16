@@ -1,0 +1,32 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="icone"
+       aria-hidden="true"
+       [style.background-image]="'url(' + (dica?.imagem.url) + ')'">
+  </div>
+
+  <h1 class="titulo">
+    {{dica?.titulo}}
+  </h1>
+  <div class="texto"
+       [innerHtml]="dica?.texto">
+  </div>
+
+</ion-content>

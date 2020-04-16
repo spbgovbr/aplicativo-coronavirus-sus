@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "objectId": "evr3SIJGsi",
+      "nome": "18 a 39 años",
+      "createdAt": "2020-03-21T21:09:59.429Z",
+      "updatedAt": "2020-03-21T21:11:07.551Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "3x4HvNEaRK",
+      "nome": "40 a 59 años",
+      "createdAt": "2020-03-21T21:10:14.928Z",
+      "updatedAt": "2020-03-21T21:11:01.403Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "Hd1HO5WaAV",
+      "nome": "Más de 60 años",
+      "createdAt": "2020-03-21T21:10:31.877Z",
+      "updatedAt": "2020-03-21T21:10:56.369Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "BWCaSkHCXV",
+      "nome": "Menores de 18 años",
+      "createdAt": "2020-03-21T21:09:47.580Z",
+      "updatedAt": "2020-03-21T21:10:50.979Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

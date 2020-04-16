@@ -1,0 +1,377 @@
+ion-content {
+  --padding-top: calc(160px + var(--ion-safe-area-top));
+  --padding-bottom: calc(120px + var(--ion-safe-area-bottom));
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+@media (min-width: 540px) {
+  ion-content {
+    --padding-start: calc(45% - 200px);
+    --padding-end: calc(45% - 200px);
+  }
+}
+
+.header {
+  padding: calc(60px + var(--ion-safe-area-top)) 20px 0 20px;
+  background-color: rgba(white, .9);
+  width: 100%;
+
+  transition: all ease 0.2s;
+
+  position: relative;
+
+  &.change-header {
+    padding: calc(20px + var(--ion-safe-area-top)) 20px 0 20px;
+
+    h2 {
+      opacity: 0;
+    }
+
+    .data {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.data.mobile-hidden {
+  margin-top: -30px;
+
+  font-weight: 600;
+  font-size: 12px;
+  color: #8498AE;
+  letter-spacing: -0.3px;
+  text-align: right;
+}
+
+
+.flex-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  h1,
+  h2 {
+    margin: 0 auto;
+  }
+
+  .situacao-titulo {
+    font-weight: 400;
+    font-size: 27px;
+    color: #16222F;
+    letter-spacing: -0.76px;
+    line-height: 33px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .situacao-sub-titulo {
+    font-weight: 400;
+    font-size: 15px;
+    color: #8498AE;
+    letter-spacing: -0.23px;
+    text-align: left;
+    line-height: 19px;
+  }
+
+  .data {
+    margin-bottom: 0px;
+
+    font-weight: 600;
+    font-size: 12px;
+    color: #8498AE;
+    letter-spacing: -0.3px;
+    text-align: right;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  scroll-behavior: smooth !important;
+
+  @media (min-width: 540px) {
+    justify-content: center;
+  }
+
+  margin: 0px -20px;
+  padding: 20px 0 20px 20px;
+
+  &::-webkit-scrollbar {
+    height: 0px;
+    background: transparent;
+  }
+
+  .card {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    flex: none;
+    margin-right: 10px;
+    padding: 22px 20px 20px 20px;
+
+    width: 130px;
+    height: 130px;
+
+    background: white;
+    border: 1px solid #DBE9F5;
+    box-shadow: 0 5px 7px 0 rgba(31, 70, 88, 0.04);
+    border-radius: 16px;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -3px;
+
+      height: 38px;
+      width: 5px;
+
+      background: #5D78FF;
+      box-shadow: 0 3px 8px 0 rgba(93, 120, 255, 0.28);
+      border-radius: 8px;
+    }
+
+    .numero {
+      font-weight: 800;
+      font-size: 26px;
+      color: #5D78FF;
+      letter-spacing: -0.64px;
+    }
+
+    .label {
+      font-weight: 800;
+      font-size: 15px;
+      color: #16222F;
+      letter-spacing: -0.4px;
+      text-align: left;
+      line-height: 18px;
+    }
+
+    &.obitos {
+      &:after {
+        background: #FAB822;
+      }
+
+      .numero {
+        color: #FAB822;
+      }
+    }
+
+    &.letalitade {
+      &:after {
+        background: #F33778;
+      }
+
+      .numero {
+        color: #F33778;
+      }
+    }
+  }
+
+  .space-fix {
+    opacity: 0;
+    color: transparent;
+    display: block;
+    flex: none;
+    width: 10px;
+    height: 100%;
+  }
+}
+
+
+.acesso-painel {
+  cursor: pointer;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-left: 30px;
+  margin: 0 -15px;
+  width: calc(100% + 30px);
+  height: 180px;
+  background-size: 100% auto;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/situacao/painel-bg.svg');
+
+  @media (min-width: 540px) {
+    margin: 0 auto;
+    max-width: 420px;
+  }
+
+  .titulo-painel {
+    max-width: 160px;
+
+    margin-top: -15px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.91px;
+    text-align: left;
+    line-height: 20px;
+  }
+
+  .logotipo-painel {
+    margin-top: 10px;
+    width: 140px;
+    height: 40px;
+    background-size: 100% auto;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/situacao/painel-logotipo.svg');
+  }
+}
+
+.estado {
+  overflow: hidden;
+
+  padding: 20px;
+  margin: 0 0 20px 0;
+
+  background: white;
+  border: 1px solid #D7E4F0;
+  box-shadow: 0 4px 7px 0 rgba(0, 136, 255, 0.15);
+  border-radius: 15px;
+
+  font-weight: 800;
+  font-size: 18px;
+  color: #16222F;
+  letter-spacing: -0.47px;
+
+  .infors {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 15px 0;
+    margin: 20px -20px -20px -20px;
+
+    border-top: 1px solid #E0E9F2;
+    background-color: #F4FAFF;
+
+    .confirmados,
+    .obitos,
+    .letalidade {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      font-weight: 500;
+      font-size: 12px;
+      color: #90A4BA;
+      letter-spacing: -0.24px;
+      text-align: center;
+
+      span {
+        margin-bottom: 2px;
+        font-weight: 800;
+        font-size: 17px;
+        color: #5D78FF;
+        letter-spacing: -0.44px;
+      }
+    }
+
+    .obitos span {
+      color: #FAB822;
+    }
+
+    .letalidade span {
+      color: #F33778;
+    }
+
+
+  }
+}
+
+
+.skeleton {
+  ion-skeleton-text {
+    border-radius: 10px;
+  }
+
+  .numero {
+    ion-skeleton-text {
+      margin-top: -1px;
+    }
+  }
+
+  .card {
+    box-shadow: none;
+    border-color: #eaeaea;
+
+    &:after {
+      box-shadow: none;
+      background: #eaeaea !important;
+    }
+  }
+
+  &.estado {
+    box-shadow: none;
+    border-color: #eaeaea;
+
+    .infors {
+      border-color: #eaeaea;
+      background-color: rgba(#eaeaea, .4);
+    }
+  }
+}
+
+
+.estado-vazio {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  .imagem {
+    margin: 20px auto;
+    width: 160px;
+    height: 160px;
+    background-size: 160px auto;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/estado-vazio/dicas.svg');
+  }
+
+  .titulo {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 22.2px;
+    color: #16222F;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .sub-titulo {
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 15px;
+    color: #6B8097;
+    letter-spacing: -0.3px;
+    text-align: center;
+    line-height: 22px;
+  }
+}

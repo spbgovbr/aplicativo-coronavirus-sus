@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "objectId": "Smq9XVvVBj",
+      "titulo": "Assess your symptoms and see recommendations",
+      "desc": "Make a self-assessment of your health status and learn more about COVID19 procedures.",
+      "ordem": 0,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-1.png"
+      },
+      "createdAt": "2020-04-07T20:13:54.655Z",
+      "updatedAt": "2020-04-07T20:13:54.655Z"
+    },
+    {
+      "objectId": "T0cnbCKK9b",
+      "titulo": "Find nearby health facilities",
+      "desc": "Look for public health facilities near your location if you need medical help.",
+      "ordem": 1,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-2.png"
+      },
+      "createdAt": "2020-04-07T20:14:27.658Z",
+      "updatedAt": "2020-04-07T20:14:27.658Z"
+    },
+    {
+      "objectId": "aETrHxDqha",
+      "titulo": "Follow official tips and procedures",
+      "desc": "Escape the Fake News and access official Ministry of Health information about COVID19.",
+      "ordem": 2,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-3.png"
+      },
+      "createdAt": "2020-04-07T20:14:48.765Z",
+      "updatedAt": "2020-04-07T20:14:48.765Z"
+    }
+  ]
+}

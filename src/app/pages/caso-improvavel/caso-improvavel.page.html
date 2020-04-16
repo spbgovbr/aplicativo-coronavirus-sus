@@ -1,0 +1,54 @@
+<ion-content>
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="imagem" [innerHTML]="'CASO_IMPROVAVEL.TITULO_IMAGEM' | translate"></div>
+
+  <div class="veredito" [innerHTML]="'CASO_IMPROVAVEL.TEXTO_DESTACADO' | translate"></div>
+
+  <div class="pre-itens" [innerHTML]="'CASO_IMPROVAVEL.TITULO_DICAS' | translate"></div>
+
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA1' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA2' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA3' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA4' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA5' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_IMPROVAVEL.DICA6' | translate"></div>
+
+  <div class="duvida">
+    {{'OBRIGADO_CONTRIBUICAO.DUVIDA.PRIMEIRA_PARTE' | translate}}
+    <span (click)="ligar()">{{'OBRIGADO_CONTRIBUICAO.DUVIDA.LINK' | translate}}</span>
+    {{'OBRIGADO_CONTRIBUICAO.DUVIDA.SEGUNDA_PARTE' | translate}}
+  </div>
+
+  <div class="dicas-noticias">
+    <div class="dicas ion-activatable"
+         role="button"
+         (click)="verDicas()">
+      <div class="icone"></div>
+      <div class="titulo">{{'OBRIGADO_CONTRIBUICAO.DICAS.TITULO'| translate}}</div>
+      <div class="sub-titulo">{{'OBRIGADO_CONTRIBUICAO.DICAS.SUBTITULO'| translate}}</div>
+    </div>
+    <div class="noticias ion-activatable"
+         role="button"
+         (click)="verNoticias()">
+      <div class="icone"></div>
+      <div class="titulo">{{'OBRIGADO_CONTRIBUICAO.NOTICIAS.TITULO'| translate}}</div>
+      <div class="sub-titulo">{{'OBRIGADO_CONTRIBUICAO.NOTICIAS.SUBTITULO'| translate}}</div>
+    </div>
+  </div>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    OK
+  </div>
+
+</ion-content>

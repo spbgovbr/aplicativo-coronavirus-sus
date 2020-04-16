@@ -1,0 +1,84 @@
+ion-content {
+  --padding-top: calc(70px + var(--ion-safe-area-top));
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.header {
+  padding-top: var(--ion-safe-area-top);
+  height: calc(60px + var(--ion-safe-area-top));
+  width: 100%;
+  background-color: rgba(white, .9);
+
+  .votlar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    ion-icon {
+      font-size: 30px;
+      color: #808080;
+    }
+  }
+}
+
+.titulo {
+  margin-bottom: 40px;
+
+  font-weight: 800;
+  font-size: 24px;
+  color: #16222F;
+  letter-spacing: -0.67px;
+  text-align: left;
+  line-height: 28px;
+}
+
+.item {
+  margin: 0 0 15px 0;
+  padding: 0 0 0 30px;
+
+  font-size: 14px;
+  color: #576F88;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    width: 22px;
+    height: 22px;
+    background-size: 22px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('/assets/images/modais/check.svg');
+  }
+}
+
+.ok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  background: #5FB531;
+  box-shadow: 0 4px 7px 0 rgba(0, 136, 255, 0.17);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+}

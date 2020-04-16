@@ -1,0 +1,28 @@
+<ion-content [forceOverscroll]="false">
+
+  <div class="votlar ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    <ion-icon name="close-outline"></ion-icon>
+  </div>
+
+  <div class="imagem">
+  </div>
+
+  <div class="titulo">
+    {{'SEM_CONEXAO.TITULO' | translate}}
+  </div>
+
+  <div class="conteudo">
+    {{'SEM_CONEXAO.SUBTITULO' | translate}}
+  </div>
+
+  <br>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    OK
+  </div>
+
+</ion-content>

@@ -1,0 +1,37 @@
+{
+  "results": [
+    {
+      "objectId": "KAzuhMqMXd",
+      "titulo": "Evaluar sus síntomas y ver recomendaciones",
+      "desc": "Realice una autoevaluación de su estado de salud y obtenga más información sobre los procedimientos COVID19.",
+      "ordem": 0,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-1.png"
+      },
+      "createdAt": "2020-04-07T20:12:40.436Z",
+      "updatedAt": "2020-04-07T20:12:40.436Z"
+    },
+    {
+      "objectId": "7hZSpBrHYB",
+      "titulo": "Encuentra instalaciones de salud cercanas",
+      "desc": "Busque instalaciones de salud pública cerca de su ubicación si necesita ayuda médica.",
+      "ordem": 1,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-2.png"
+      },
+      "createdAt": "2020-04-07T20:13:04.690Z",
+      "updatedAt": "2020-04-07T20:13:04.690Z"
+    },
+    {
+      "objectId": "47qZuUfEk5",
+      "titulo": "Siga los consejos y procedimientos oficiales",
+      "desc": "Escape de las noticias falsas y acceda a información oficial del Ministerio de Salud sobre COVID19.",
+      "ordem": 2,
+      "imagem": {
+        "url": "assets/images/onboard/onboard-3.png"
+      },
+      "createdAt": "2020-04-07T20:13:27.473Z",
+      "updatedAt": "2020-04-08T00:12:21.957Z"
+    }
+  ]
+}

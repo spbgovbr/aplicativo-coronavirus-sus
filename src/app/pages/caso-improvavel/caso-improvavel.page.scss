@@ -1,0 +1,211 @@
+ion-content {
+  --padding-top: calc(70px + var(--ion-safe-area-top));
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.header {
+  padding-top: var(--ion-safe-area-top);
+  height: calc(60px + var(--ion-safe-area-top));
+  width: 100%;
+  background-color: rgba(white, .9);
+
+  .votlar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    ion-icon {
+      font-size: 30px;
+      color: #808080;
+    }
+  }
+}
+
+.imagem {
+  margin: 0 -12px;
+  width: calc(100% + 24px);
+  height: 180px;
+  background-size: 100% auto;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/modais/caso-improvavel.svg');
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+  padding-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+  letter-spacing: -0.91px;
+  text-align: left;
+}
+
+.veredito {
+  font-weight: 700;
+  font-size: 16px;
+  color: #16222F;
+  letter-spacing: -0.56px;
+  line-height: 21px;
+}
+
+.pre-itens {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #576F88;
+  letter-spacing: -0.4px;
+  line-height: 21px;
+}
+
+.item {
+  margin: 0 0 15px 0;
+  padding: 0 0 0 30px;
+
+  font-size: 14px;
+  color: #576F88;
+  letter-spacing: -0.4px;
+  line-height: 19px;
+
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    width: 22px;
+    height: 22px;
+    background-size: 22px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('/assets/images/modais/check.svg');
+  }
+}
+
+.duvida {
+  margin-top: 20px;
+
+  font-weight: 700;
+  font-size: 16px;
+  color: #16222F;
+  letter-spacing: -0.56px;
+  line-height: 21px;
+
+  span {
+    color: #0088FF;
+  }
+}
+
+.dicas-noticias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 20px -10px;
+
+  .dicas,
+  .noticias {
+    overflow: hidden;
+
+    padding: 30px 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 10px;
+    width: calc(50% - 20px);
+    // height: 150px;
+    border-radius: 17px;
+
+    &.ion-activated:before {
+      border-radius: 17px;
+    }
+
+    .icone {
+      width: 30px;
+      height: 30px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 30px;
+      background-color: transparent;
+      background-image: url('/assets/images/modais/dicas.svg');
+    }
+
+    .titulo {
+      margin: 20px 0 5px 0;
+
+      color: #16222F;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.39px;
+      line-height: 16px;
+    }
+
+    .sub-titulo {
+      color: #3B9F98;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.35px;
+      line-height: 14px;
+    }
+
+    &.dicas {
+      &.ion-activated:before {
+        background-color: rgba(#3B9F98, .4);
+      }
+
+      border: 1px solid #A8DAD7;
+      box-shadow: 0 5px 13px 0 rgba(0, 136, 255, 0.13);
+    }
+
+    &.noticias {
+      &.ion-activated:before {
+        background-color: rgba(#CE9F3A, .4);
+      }
+
+      border: 1px solid #F2D391;
+      box-shadow: 0 5px 13px 0 rgba(0, 136, 255, 0.13);
+
+      .icone {
+        background-image: url('/assets/images/modais/noticias.svg');
+      }
+
+      .sub-titulo {
+        color: #CE9F3A;
+      }
+    }
+  }
+}
+
+.ok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  background: #5FB531;
+  box-shadow: 0 4px 7px 0 rgba(0, 136, 255, 0.17);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+}

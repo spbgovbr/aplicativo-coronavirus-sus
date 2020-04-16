@@ -1,0 +1,152 @@
+.fechar {
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  top: calc(20px + var(--ion-safe-area-top));
+  transform: translate3d(-50%, 0, 0);
+
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: 540px) {
+    width: 480px;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+
+  .botao {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    ion-icon {
+      color: white;
+      font-size: 34px;
+    }
+  }
+}
+
+.prev,
+.next {
+  z-index: 888;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+
+  &.next {
+    left: 50%;
+  }
+}
+
+.logotipo {
+  z-index: 888;
+  position: fixed;
+  left: 50%;
+  bottom: calc(70px + var(--ion-safe-area-bottom));
+  transform: translate3d(-50%, 0, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  ion-icon {
+    color: white;
+    width: 180px;
+    height: 30px;
+  }
+}
+
+.ver-mais {
+  z-index: 999 !important;
+  position: fixed;
+  left: 50%;
+  bottom: calc(10px + var(--ion-safe-area-bottom));
+  transform: translate3d(-50%, 0, 0);
+
+  padding: 5px 10px;
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+
+  ion-icon {
+    margin-bottom: -4px;
+    color: white;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+ion-content {
+  --background: #004786;
+
+  @media (min-width: 540px) {
+    --background: #070A0E;
+  }
+
+  ion-slides {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 540px) {
+      width: 480px;
+    }
+
+    ion-slide {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      padding: 0 20px;
+
+      color: white;
+      text-align: left;
+
+      .imagem {
+        z-index: -1;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center;
+      }
+
+      .titulo {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 25.2px;
+        color: #FFFFFF;
+        letter-spacing: -0.57px;
+        line-height: 30px;
+      }
+
+      .desc {
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.88);
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+
+      .space {
+        height: 20%;
+      }
+    }
+  }
+}

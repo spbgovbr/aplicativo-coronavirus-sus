@@ -1,0 +1,120 @@
+ion-content {
+  --padding-top: calc(70px + var(--ion-safe-area-top));
+  --padding-bottom: 120px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+@media (min-width: 540px) {
+  ion-content {
+    --padding-start: calc(45% - 200px);
+    --padding-end: calc(45% - 200px);
+  }
+}
+
+.header {
+  padding-top: var(--ion-safe-area-top);
+  height: calc(60px + var(--ion-safe-area-top));
+  width: 100%;
+  background-color: rgba(white, .9);
+
+  .votlar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    ion-icon {
+      font-size: 21px;
+      color: #808080;
+    }
+  }
+}
+
+.confirmar {
+  position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  left: 20px;
+  bottom: calc(20px + var(--ion-safe-area-bottom));
+  width: calc(100% - 40px);
+  height: 60px;
+  background: #943CFD;
+  border: 1px solid #6123AB;
+  box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+
+  @media (min-width: 540px) {
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    width: 40%;
+  }
+}
+
+@keyframes slideInRight {
+  // from {
+  //   -webkit-transform: translate3d(100%, 0, 0);
+  //   transform: translate3d(100%, 0, 0);
+  //   visibility: visible;
+  // }
+
+  // to {
+  //   -webkit-transform: translate3d(0, 0, 0);
+  //   transform: translate3d(0, 0, 0);
+  // }
+}
+
+
+
+.skeleton {
+
+  ion-skeleton-text {
+    border-radius: 10px;
+  }
+
+  h1 {
+    margin: 25px 0 0 0;
+  }
+  
+  h2 {
+    margin: 40px 0 20px 0;
+  }
+
+  .itens {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin: -10px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+      padding: 0;
+      margin: 10px;
+      width: calc(50% - 20px);
+      height: 60px;
+      background: #EAF3FC;
+      border-radius: 10px;
+    }
+  }
+
+  .confirmar {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+}

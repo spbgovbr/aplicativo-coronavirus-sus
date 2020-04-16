@@ -1,0 +1,29 @@
+<ion-content [forceOverscroll]="false">
+
+  <div class="votlar ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    <ion-icon name="close-outline"></ion-icon>
+  </div>
+
+  <div class="imagem">
+  </div>
+
+  <div class="titulo">
+    {{'MAPA.ESTADO_VAZIO.TITULO' | translate}}
+  </div>
+
+  <div class="conteudo">
+    {{'MAPA.ESTADO_VAZIO.SUBTITULO' | translate}}
+  </div>
+
+  <br>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="habilitarLocalizacao()">
+    {{'MAPA.ESTADO_VAZIO.BOTAO_HABILITAR' | translate}}
+  </div>
+
+</ion-content>
+

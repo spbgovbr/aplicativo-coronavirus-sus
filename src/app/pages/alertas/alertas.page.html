@@ -1,0 +1,75 @@
+<ion-content [scrollEvents]="true"
+             (ionScroll)="onScroll($event)">
+
+  <div class="header desktop-hidden"
+       slot="fixed"
+       [ngClass]="{'change-header': changeHeader }">
+
+    <ion-toggle [(ngModel)]="notificacao" (ionChange)="changePermissionPush()"></ion-toggle>
+
+    <h1 class="alertas-titulo">
+      {{'ALERTAS.TITULO' | translate}}
+    </h1>
+    <h2 class="alertas-sub-titulo">
+      {{'ALERTAS.SUBTITULO' | translate}}
+    </h2>
+  </div>
+
+  <!-- skeleton -->
+  <div class="alertas" *ngIf="alertas?.length == 0 && !estadoVazio">
+    <div class="alerta lida"
+         *ngFor="let i of [0,1,2,3,4]">
+      <div class="titulo">
+        <ion-skeleton-text style="width: 150px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="horario">
+        <ion-skeleton-text style="width: 50px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="texto lines-2">
+        <ion-skeleton-text style="width: 100%;"
+                           animated></ion-skeleton-text>
+        <ion-skeleton-text style="width: 100%;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+  </div>
+
+  <div class="alertas"
+       *ngIf="!estadoVazio">
+    <div class="alerta ion-activatable"
+         role="button"
+         [ngClass]="{'lida': alerta?.lida }"
+         *ngFor="let alerta of alertas" (click)="openDetalhe(alerta)">
+      <div class="titulo">
+        {{alerta.titulo}}
+      </div>
+      <div class="horario">
+        {{alerta.createdAt | date: 'dd/MM/yyyy hh:mm'}}
+      </div>
+      <div class="texto lines-2">
+        {{alerta.mensagem}}
+      </div>
+
+      <ion-icon aria-hidden="true" name="chevron-forward-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="estado-vazio"
+       *ngIf="estadoVazio && alertas?.length === 0">
+    <div class="imagem">
+    </div>
+
+    <div class="titulo">
+      {{'ALERTAS.ESTADO_VAZIO.TITULO' | translate}}
+    </div>
+
+    <div class="conteudo">
+      {{'ALERTAS.ESTADO_VAZIO.SUBTITULO' | translate}}
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+</ion-content>

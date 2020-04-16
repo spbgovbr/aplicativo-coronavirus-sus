@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "createdAt": "2020-03-21T02:12:02.948Z",
+      "imagem": {
+        "url": "assets/images/dicas/fakenews.svg"
+      },
+      "link": "https://www.saude.gov.br/fakenews",
+      "objectId": "ietVT7Wj09",
+      "ordem": 9,
+      "texto": "<p>To prevent the spread of lies about the coronavirus, make sure that the messages you receive are true before you pass them on. Look for the channel Saúde sem Fake News, at www.saude.gov.br/fakenews. There, you will find official and updated answers. If you cannot find your question on the website, send a message to WhatsApp: (61) 99289-4640. Disque Saúde 136 is also open 24 hours a day, seven days a week, and is able to answer questions about the coronavirus. The call is free. </p>",
+      "titulo": "Fake News",
+      "updatedAt": "2020-03-22T04:12:36.462Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:10:57.760Z",
+      "imagem": {
+        "url": "assets/images/dicas/viajantes.svg"
+      },
+      "link": "http://plataforma.saude.gov.br/novocoronavirus/",
+      "objectId": "9y0uD8BzDR",
+      "ordem": 8,
+      "texto": "Assess the real need for travel to a location with COVID-19 cases and postpone if possible. If it is unavoidable, prevent and follow the guidelines of the local health authorities.\n<br /> <br />\nIf you are traveling back from a place with cases of COVID-19, be aware of your health condition, especially in the first 14 days after returning. If you experience symptoms such as fever, cough and difficulty breathing, seek medical care and report your travel history.\n<br /> <br />\nAnd don't forget to take all the recommended precaution and prevention measures, practicing breathing etiquette and, mainly, reinforcing hand washing with soap and water or cleaning with 70% alcohol gel.\n<br /> <br />\nFollow the coronavirus 2019 disease data (COVID-19) in Brazil and worldwide, through the Ministry of Health's Integrated Health Surveillance Platform (IVIS).",
+      "titulo": "Information for travelers",
+      "updatedAt": "2020-03-21T20:51:01.569Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:12:52.645Z",
+      "imagem": {
+        "url": "assets/images/dicas/vacina.svg"
+      },
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46257-mapa-hospitais-referencia-novo-coronavirus",
+      "objectId": "hHJQ1RuCm0",
+      "ordem": 7,
+      "texto": "To date, there is no vaccine available against COVID-19.\n<br /> <br />\nThere is treatment available, which prevents the disease from worsening and reduces discomfort. However, there is still no specific medication to eliminate the coronavirus.\n<br /> <br />\nThe vast majority of cases are self-limiting, that is, they are spontaneously cured. According to the World Health Organization, about 80% of cases are mild. The biggest concern is when the disease affects the elderly or people with chronic diseases (hypertension, heart disease, diabetes, etc.), in which the risk of complications increases. People with severe illness should be hospitalized.\n<br /> <br />\nSerious cases should be referred to a Reference Hospital for isolation and treatment. Mild cases should be monitored by Primary Health Care (PHC) and home precautionary measures instituted.",
+      "titulo": "Is there a vaccine, medication or treatment?",
+      "updatedAt": "2020-03-21T20:50:46.891Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:13:50.214Z",
+      "imagem": {
+        "url": "assets/images/dicas/diagnostico.svg"
+      },
+      "objectId": "fild6dp4Ot",
+      "ordem": 6,
+      "texto": "The diagnosis of coronavirus is made by collecting respiratory materials from patients classified as suspected cases of COVID-19. The samples are sent to the Central Public Health Laboratories (Lacen) of the States to perform molecular biology exams to detect viral RNA.",
+      "titulo": "How is the diagnosis made?",
+      "updatedAt": "2020-03-21T20:50:37.910Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:06:01.312Z",
+      "imagem": {
+        "url": "assets/images/dicas/vigilancia.svg"
+      },
+      "objectId": "xbiCtcNT2P",
+      "ordem": 5,
+      "texto": "All cases must be registered by public and private health services in Brazil, using the electronic form, within the first 24 hours after clinical suspicion.\nAs of March 1, 2020, the following operational definitions for national public health came into effect.\n<br /> <br />\n#1. SUSPECTED CASE OF CORONAVIRUS DISEASE 2019 (COVID-19)\nSITUATION 1: Fever And at least one respiratory sign or symptom (cough, difficulty breathing, flapping of the nasal wings, among others) And history of travel to an area with local transmission, according to WHO, in the last 14 days prior to the appearance of signs or symptoms; OR\nSITUATION 2: Fever And at least one respiratory sign or symptom (cough, difficulty breathing, flapping of the nasal wings, among others) And a history of close contact with a suspected case of coronavirus (COVID-19), in the last 14 days prior to the appearance signs or symptoms *.\n<br /> <br />\n#2. PROBABLE CASE OF CORONAVIRUS DISEASE 2019 (COVID-19)\nClose home contact of a confirmed laboratory case, which presents fever AND / OR any respiratory symptoms, within 14 days after the last contact with the patient.\n<br /> <br />\n# 3. CONFIRMED CASE OF CORONAVIRUS DISEASE 2019 (COVID-19)\nA) LABORATORY CRITERION: Positive result in RT-PCR, by the Charité protocol.\nB) CLINICAL-EPIDEMIOLOGICAL CRITERION: Close home contact of a laboratory confirmed case, presenting fever AND / OR any respiratory symptoms, within 14 days after the last contact with the patient and for which the specific laboratory investigation was not possible.",
+      "titulo": "How does case surveillance and notification work in Brazil?",
+      "updatedAt": "2020-03-21T20:50:26.021Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:08:44.694Z",
+      "imagem": {
+        "url": "assets/images/dicas/mascara.svg"
+      },
+      "objectId": "AEK7eJHlhL",
+      "ordem": 4,
+      "texto": "Wear a mask if you are coughing or sneezing to avoid spreading viruses to others.\n<br /> <br />\nFor healthy people, wear a mask only if you are caring for a person suspected of having a coronavirus infection.\n<br /> <br />\nMasks are effective only when used in combination with frequent hand cleaning with soap and water or sanitized with 70% alcohol gel.\n<br /> <br />\nWhen using a mask, one must know how to use it and dispose of it properly.",
+      "titulo": "When to wear a mask?",
+      "updatedAt": "2020-03-21T20:50:09.412Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:07:01.350Z",
+      "imagem": {
+        "url": "assets/images/dicas/previnir.svg"
+      },
+      "objectId": "sHowhCFyIW",
+      "ordem": 3,
+      "texto": "General respiratory prevention and etiquette measures should be adopted, such as:\n<li> - Wash your hands regularly and thoroughly with soap and water, or clean them with 70% alcohol-gel. In this way it is possible to eliminate viruses that may be in your hands. </li>\n<li> - Keep at least 2 meters between you and anyone coughing or sneezing. That way it is possible to decrease the risk of breathing respiratory droplets that contain viruses, if the person is sick. </li>\n<li> - Avoid touching your eyes, nose and mouth with your unwashed hands. This way, it is possible to prevent contaminated hands from transferring viruses to the eyes, nose or mouth, making you sick. </li>\n<li> - Make sure that you and the people around you practice good breathing etiquette. This means covering your mouth and nose with your forearm or with a disposable tissue when you cough or sneeze. Then, dispose of the used tissue immediately. That way you protect people around you from viruses like colds, flu and COVID-19. </li>\n<li> - Maintain well ventilated environments and avoid sharing personal items, with cutlery, plates, glasses or bottles. This helps to prevent the spread of respiratory diseases. </li>",
+      "titulo": "How to prevent it?",
+      "updatedAt": "2020-03-21T20:49:52.817Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:14:37.472Z",
+      "imagem": {
+        "url": "assets/images/dicas/transmite.svg"
+      },
+      "objectId": "9SxlVVg5YB",
+      "ordem": 2,
+      "texto": "Expelled from the nose and mouth when an infected person coughs, sneezes or speaks, even when they have mild symptoms or do not feel sick. These droplets can be deposited on objects or surfaces for hours, and other people can acquire the virus by touching these contaminated objects or surfaces and then touching the eyes, nose or mouth. They can also become infected by directly breathing respiratory droplets from an infected person when they cough or sneeze or by direct contact such as touching or shaking hands. So it is important to stand more than 2 meters away from a sick person, and wash your hands with soap and water or alcohol gel.",
+      "titulo": "How is it transmitted?",
+      "updatedAt": "2020-03-21T20:49:33.406Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:09:24.407Z",
+      "imagem": {
+        "url": "assets/images/dicas/sintomas.svg"
+      },
+      "objectId": "wW5iX7Zes7",
+      "ordem": 1,
+      "texto": "Coronavirus Disease 2019 (Covid-19) is similar to a “flu”. It is usually a mild or moderate disease, but some cases can become serious. The most common symptoms are: fever, cough and / or difficulty breathing.\n<br /> Some patients may experience tiredness, body aches, malaise in general, nasal congestion, runny nose, sore throat or chest pain. These symptoms are usually mild and begin gradually.\n<br /> Some people are infected, but have no symptoms or have mild, almost imperceptible symptoms.\n<br /> Most people (about 80%) recover from the disease without needing special treatment. About 1 in 6 people who fall ill with COVID-19 may have the severe form of the disease.\n<br /> Elderly people with certain chronic conditions, such as high blood pressure, cardiovascular disease and diabetes, have a greater risk of developing the severe form.\n<br /> People with fever, cough and difficulty breathing should seek immediate medical attention. A mask should be used as a way to prevent the dispersion of respiratory droplets when coughing, sneezing or talking, combined with washing or hand hygiene. After treatment, medical guidelines should be followed, avoiding frequent public or work environments, seeking to remain at home until the symptoms disappear. This will prevent the spread of viruses and the occurrence of new infections.",
+      "titulo": "What are the symptoms?",
+      "updatedAt": "2020-03-21T20:49:14.669Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:10:07.480Z",
+      "imagem": {
+        "url": "assets/images/dicas/oquee.svg"
+      },
+      "objectId": "WDm5XYgSYO",
+      "ordem": 0,
+      "texto": "Coronaviruses are a large family of viruses that can cause everything from common colds to more serious respiratory diseases that are important for public health, such as the Severe Acute Respiratory Syndrome (SARS) and the Middle East Respiratory Syndrome (MERS). The new coronavirus discovered in December 2019 in China (SARS-CoV-2) is the causative agent of 2019 coronavirus disease (COVID-19).",
+      "titulo": "What are Coronaviruses?",
+      "updatedAt": "2020-03-21T20:49:07.959Z"
+    }
+  ]
+}

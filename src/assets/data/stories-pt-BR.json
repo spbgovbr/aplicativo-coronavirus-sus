@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "objectId": "LAu8nLwTIJ",
+      "texto": "China cancelou todos os embarques de produtos por navio até março. 🇨🇳",
+      "imagem": {
+        "url": "assets/images/stories/storie-1.png"
+      },
+      "createdAt": "2020-04-07T22:23:22.653Z",
+      "updatedAt": "2020-04-09T17:48:16.050Z",
+      "link": "https://www.saude.gov.br/fakenews/46369-china-cancelou-todos-os-embarques-de-produtos-por-navio-ate-marco-e-fake-news"
+    },
+    {
+      "objectId": "XdvNhNe4An",
+      "texto": "📱📞 Ministério da Saúde já atendeu 471,6 mil pessoas à distância",
+      "imagem": {
+        "url": "assets/images/stories/storie-2.png"
+      },
+      "createdAt": "2020-04-07T22:23:47.177Z",
+      "updatedAt": "2020-04-09T17:48:50.334Z",
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46675-ministerio-da-saude-ja-atendeu-471-6-mil-pessoas-a-distancia",
+    },
+    {
+      "objectId": "wfj28y88RG",
+      "texto": "🤒 Veja como se proteger e proteger sua família se houver um caso de coronavírus confirmado morando na mesma casa. ",
+      "imagem": {
+        "url": "assets/images/stories/storie-3.png"
+      },
+      "createdAt": "2020-04-07T22:24:07.846Z",
+      "updatedAt": "2020-04-09T17:49:25.768Z",
+      "link": "https://twitter.com/minsaude/status/1246769555839553537?s=20",
+    },
+    {
+      "objectId": "hQ38RHG9Ux",
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46555-todos-os-laboratorios-publicos-do-pais-podem-realizar-exame-para-coronavirus",
+      "createdAt": "2020-04-09T17:44:05.791Z",
+      "updatedAt": "2020-04-09T17:49:47.816Z",
+      "texto": "Todos os laboratórios públicos do país podem realizar exame para coronavírus. 🏥",
+      "imagem": {
+        "url": "assets/images/stories/storie-4.png"
+      }
+    }
+  ]
+}

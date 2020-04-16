@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "objectId": "5O5LAhBDGe",
+      "texto": "China canceled all shipments of products by ship until March. 🇨🇳",
+      "imagem": {
+        "url": "assets/images/stories/storie-1.png"
+      },
+      "createdAt": "2020-04-07T22:29:50.863Z",
+      "updatedAt": "2020-04-09T17:48:31.644Z",
+      "link": "https://www.saude.gov.br/fakenews/46369-china-cancelou-todos-os-embarques-de-produtos-por-navio-ate-marco-e-fake-news"
+    },
+    {
+      "objectId": "giWFVgOf2f",
+      "texto": "📱📞 Ministry of Health has already served 471,600 people remotely",
+      "imagem": {
+        "url": "assets/images/stories/storie-2.png"
+      },
+      "createdAt": "2020-04-07T22:30:10.002Z",
+      "updatedAt": "2020-04-09T17:49:16.002Z",
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46675-ministerio-da-saude-ja-atendeu-471-6-mil-pessoas-a-distancia",
+    },
+    {
+      "objectId": "R7SyYjE6bq",
+      "texto": "🤒 See how to protect yourself and your family if there is a confirmed case of coronavirus living in the same house.",
+      "imagem": {
+        "url": "assets/images/stories/storie-3.png"
+      },
+      "createdAt": "2020-04-07T22:30:24.870Z",
+      "updatedAt": "2020-04-09T17:49:42.508Z",
+      "link": "https://twitter.com/minsaude/status/1246769555839553537?s=20",
+    },
+    {
+      "objectId": "shgGwHkeuU",
+      "texto": "All public laboratories in the country can perform a coronavirus exam. 🏥",
+      "createdAt": "2020-04-09T17:46:51.019Z",
+      "updatedAt": "2020-04-09T17:49:57.557Z",
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46555-todos-os-laboratorios-publicos-do-pais-podem-realizar-exame-para-coronavirus",
+      "imagem": {
+        "url": "assets/images/stories/storie-4.png"
+      }
+    }
+  ]
+}

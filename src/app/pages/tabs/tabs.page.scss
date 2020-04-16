@@ -1,0 +1,74 @@
+ion-tab-bar {
+  --border: 0;
+
+  &.mobile-hidden {
+    justify-content: space-between;
+
+    ion-tab-button {
+      color: white;
+    }
+
+    .logotipo {
+      flex: none;
+      margin-left: 20px;
+
+      overflow: hidden;
+      width: 160px;
+      height: 20px;
+
+      ion-icon {
+        color: white;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .botoes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+
+      .tab-selected {
+        color: var(--ion-color-primary);
+      }
+    }
+
+    app-idiomas {
+      margin-right: 20px;
+    }
+  }
+
+
+
+
+  ion-tab-button {
+    color: #9AB5CD;
+    background-color: transparent;
+
+    &.ion-activated:before {
+      background-color: rgba(#B5D8F7, .4);
+    }
+
+    &.tab-selected {
+      ion-icon {
+        color: var(--ion-color-primary);
+      }
+
+      ion-label {
+        color: black;
+      }
+    }
+
+    ion-icon {
+      margin: 0 !important;
+      font-size: 21px;
+    }
+
+    ion-label {
+      font-size: 12px;
+      margin: 4px 0 0 0 !important;
+    }
+  }
+}

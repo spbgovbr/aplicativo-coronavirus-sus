@@ -1,0 +1,22 @@
+<ion-content>
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+  </div>
+
+  <h1 class="titulo">
+    {{alerta.titulo}}
+  </h1>
+  <div class="horario">
+    {{alerta.createdAt | date: 'dd/MM/yyyy hh:mm'}}
+  </div>
+  <div class="texto"
+       [innerHtml]="alerta.mensagem">
+  </div>
+
+</ion-content>

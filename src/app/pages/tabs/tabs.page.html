@@ -1,0 +1,77 @@
+<ion-tabs>
+
+  <!-- mobile version -->
+  <ion-tab-bar mode="ios"
+               class="desktop-hidden"
+               slot="bottom">
+    <ion-tab-button tab="inicio">
+      <ion-icon src="./assets/images/tabs/inicio.svg"></ion-icon>
+      <ion-label>{{'INICIO.TAB_NAME' | translate}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="dicas">
+      <ion-icon src="./assets/images/tabs/dicas.svg"></ion-icon>
+      <ion-label>{{'DICAS.TAB_NAME' | translate}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="noticias">
+      <ion-icon src="./assets/images/tabs/noticias.svg"></ion-icon>
+      <ion-label>{{'NOTICIAS.TAB_NAME' | translate}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="alertas">
+      <ion-icon src="./assets/images/tabs/alertas.svg"></ion-icon>
+      <ion-label>{{'ALERTAS.TAB_NAME' | translate}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="situacao">
+      <ion-icon src="./assets/images/tabs/situacao.svg"></ion-icon>
+      <ion-label>{{'SITUACAO.TAB_NAME' | translate}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+
+
+  <!-- desktop version -->
+  <ion-tab-bar mode="ios"
+               class="mobile-hidden"
+               slot="top">
+
+    <div class="logotipo">
+      <ion-icon src="./assets/images/logotipo.svg"></ion-icon>
+    </div>
+    <div class="botoes">
+      <ion-tab-button tab="inicio">
+        <ion-icon src="./assets/images/tabs/inicio.svg"></ion-icon>
+        <ion-label>{{'INICIO.TAB_NAME' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="dicas">
+        <ion-icon src="./assets/images/tabs/dicas.svg"></ion-icon>
+        <ion-label>{{'DICAS.TAB_NAME' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="noticias">
+        <ion-icon src="./assets/images/tabs/noticias.svg"></ion-icon>
+        <ion-label>{{'NOTICIAS.TAB_NAME' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="alertas">
+        <ion-icon src="./assets/images/tabs/alertas.svg"></ion-icon>
+        <ion-label>{{'ALERTAS.TAB_NAME' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="situacao">
+        <ion-icon src="./assets/images/tabs/situacao.svg"></ion-icon>
+        <ion-label>{{'SITUACAO.TAB_NAME' | translate}}</ion-label>
+      </ion-tab-button>
+
+      <app-idiomas *ngIf="language"
+                   [language]="language"
+                   (idiomaSelected)="idiomaSelected($event)"></app-idiomas>
+    </div>
+
+
+  </ion-tab-bar>
+
+</ion-tabs>

@@ -1,0 +1,27 @@
+<ion-content>
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="titulo" [innerHTML]="'CASO_ISOLAMENTO_CUIDADOR.TITULO' | translate">
+  </div>
+
+  <div class="item"> {{'CASO_ISOLAMENTO_CUIDADOR.DICA1' | translate}}</div>
+  <div class="item">{{'CASO_ISOLAMENTO_CUIDADOR.DICA2' | translate}}</div>
+  <div class="item">{{'CASO_ISOLAMENTO_CUIDADOR.DICA3' | translate}}</div>
+
+  <br>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    OK
+  </div>
+
+</ion-content>

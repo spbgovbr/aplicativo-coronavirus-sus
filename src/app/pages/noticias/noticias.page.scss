@@ -1,0 +1,263 @@
+ion-content {
+  --padding-top: calc(120px + var(--ion-safe-area-top));
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+@media (min-width: 540px) {
+  ion-content {
+    --padding-start: calc(45% - 200px);
+    --padding-end: calc(45% - 200px);
+  }
+}
+
+.header {
+  padding: calc(60px + var(--ion-safe-area-top)) 20px 0 20px;
+  background-color: rgba(white, .9);
+  width: 100%;
+
+  transition: all ease 0.2s;
+
+  position: relative;
+
+  &.change-header {
+    padding: calc(20px + var(--ion-safe-area-top)) 20px 0 20px;
+
+    h2 {
+      opacity: 0;
+    }
+
+    ion-toggle {
+      bottom: 10px;
+    }
+
+  }
+}
+
+h1,
+h2 {
+  margin: 0 auto;
+}
+
+.fake-news {
+  position: relative;
+
+  // margin: 0 0 20px 0;
+  padding: 15px 40% 15px 15px;
+  background: #FDE1C2;
+  border-radius: 15px;
+
+  font-weight: 600;
+  font-size: 12px;
+  color: #C1905C;
+  letter-spacing: -0.31px;
+  line-height: 14px;
+
+  &.ion-activated:before {
+    background-color: rgba(#C1905C, .4);
+  }
+
+  .fake-news-titulo {
+    margin-bottom: 8px;
+
+    font-size: 700;
+    font-size: 18px;
+    color: #8F5412;
+    letter-spacing: -0.47px;
+    line-height: 16px;
+  }
+
+  .image {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url('/assets/images/noticias/fakenews.svg');
+
+  }
+}
+
+.noticias-titulo {
+  font-weight: 400;
+  font-size: 22px;
+  color: #16222F;
+  letter-spacing: -0.64px;
+  line-height: 19px;
+  cursor: pointer;
+  span {
+    font-weight: 800;
+  }
+
+  &.inner {
+    margin: 25px 0 15px 0;
+    font-size: 16px;
+  }
+}
+
+.noticias-sub-titulo {
+  font-weight: 500;
+  font-size: 13px;
+  color: #8498AE;
+  letter-spacing: 0.01px;
+  text-align: left;
+  line-height: 19px;
+}
+
+.noticias {
+  .noticia {
+    overflow: inherit;
+
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #EDF7FF;
+    border-radius: 15px;
+
+    position: relative;
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .titulo {
+      font-weight: 700;
+      font-size: 12px;
+      color: #16222F;
+      letter-spacing: -0.31px;
+      line-height: 16px;
+    }
+
+    .twitter {
+      margin-bottom: 4px;
+
+      font-weight: 700;
+      font-size: 12px;
+      color: #0088FF;
+      letter-spacing: -0.31px;
+      line-height: 16px;
+    }
+
+    .horario {
+      margin-bottom: 8px;
+
+      font-weight: 500;
+      font-size: 12px;
+      color: #536273;
+      letter-spacing: -0.31px;
+      line-height: 16px;
+    }
+
+    .texto {
+      font-size: 14px;
+      color: #16222F;
+      letter-spacing: -0.31px;
+      line-height: 14px;
+    }
+
+    .imagem {
+      margin-top: 10px;
+      width: 100%;
+      height: 120px;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat;
+      background-color: transparent;
+
+      background: #D8D8D8;
+      border: 1px solid #FFFFFF;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+
+.estado-vazio {
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+
+  // position: absolute;
+  // top: 50%;
+  // left: 20px;
+  // transform: translate3d(0, -40%, 0);
+  // width: calc(100% - 40px);
+
+  .imagem {
+    margin: 10px auto;
+    width: 160px;
+    height: 160px;
+    background-size: 160px auto;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/estado-vazio/noticias.svg');
+  }
+
+  .titulo {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 22.2px;
+    color: #16222F;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 30px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .conteudo {
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #6B8097;
+    letter-spacing: -0.3px;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background: #0088FF;
+    box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+}
+
+
+.skeleton {
+  .imagem {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 10px;
+  }
+}
+ion-skeleton-text {
+  border-radius: 10px;
+}

@@ -1,0 +1,113 @@
+<ion-content [scrollEvents]="true"
+             (ionScroll)="onScroll($event)">
+
+  <div class="header desktop-hidden"
+       slot="fixed"
+       [ngClass]="{'change-header': changeHeader }">
+    <h1 class="dicas-titulo">
+      <span>{{'DICAS.TITULO_PRIMARIO' | translate}}</span> {{'DICAS.TITULO_SECUNDARIO' | translate}}
+    </h1>
+    <h2 class="dicas-sub-titulo">
+      {{'DICAS.SUBTITULO' | translate}}
+    </h2>
+  </div>
+
+  <div class="pesquisar-dicas">
+    <ion-searchbar placeholder="{{'DICAS.PLACEHOLDER_BUSCA' | translate}}" mode="ios"
+                   [(ngModel)]="pesquisarString" (ionChange)="pesquisar()">
+    </ion-searchbar>
+    <div class="pesquisar-botao ion-activatable"
+         role="button"
+         (click)="pesquisar()">
+      <ion-icon src="./assets/images/dicas/busca.svg"></ion-icon>
+    </div>
+  </div>
+
+  <ng-container *ngIf="!estadoVazio">
+    <div class="dicas"
+         *ngIf="dicas?.length && !filtrado">
+      <div class="coluna esquerda">
+        <ng-container *ngFor="let dica of dicas; let i = index;">
+          <ng-container *ngIf="i % 2 === 0">
+            <div class="dica ion-activatable"
+                 role="button"
+                 (click)="openDetalheDica(dica)">
+              <div class="icone"
+                   aria-hidden="true"
+                   [style.background-image]="'url(' + (dica?.imagem.url) + ')'"></div>
+              {{dica.titulo}}
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+      <div class="coluna direita">
+        <ng-container *ngFor="let dica of dicas; let i = index;">
+          <ng-container *ngIf="i % 2 !== 0">
+            <div class="dica ion-activatable"
+                 role="button"
+                 (click)="openDetalheDica(dica)">
+              <div class="icone"
+                   aria-hidden="true"
+                   [style.background-image]="'url(' + (dica?.imagem.url) + ')'"></div>
+              {{dica.titulo}}
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="dicas"
+         *ngIf="dicasFiltrada?.length && filtrado">
+      <div class="coluna esquerda">
+        <ng-container *ngFor="let dica of dicasFiltrada; let i = index;">
+          <ng-container *ngIf="i % 2 === 0">
+            <div class="dica ion-activatable"
+                 role="button"
+                 (click)="openDetalheDica(dica)">
+              <div class="icone"
+                   aria-hidden="true"
+                   [style.background-image]="'url(' + (dica?.imagem.url) + ')'"></div>
+              {{dica.titulo}}
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+      <div class="coluna direita">
+        <ng-container *ngFor="let dica of dicasFiltrada; let i = index;">
+          <ng-container *ngIf="i % 2 !== 0">
+            <div class="dica ion-activatable"
+                 role="button"
+                 (click)="openDetalheDica(dica)">
+              <div class="icone"
+                   aria-hidden="true"
+                   [style.background-image]="'url(' + (dica?.imagem.url) + ')'"></div>
+              {{dica.titulo}}
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="dicas skeleton"
+         *ngIf="!dicas?.length">
+      <div class="dica skeleton"
+           *ngFor="let i of [0,1,2,3]">
+        <ion-skeleton-text animated
+                           style="width: 74px; height: 74px; border-radius: 74px;"></ion-skeleton-text>
+        <ion-skeleton-text animated
+                           style="width: 100%; height: 30px;"></ion-skeleton-text>
+      </div>
+    </div>
+  </ng-container>
+
+  <div class="estado-vazio"
+       *ngIf="dicasFiltrada?.length === 0 && filtrado">
+    <div class="imagem"></div>
+    <div class="titulo">
+      {{'DICAS.ESTADO_VAZIO' | translate}}
+    </div>
+  </div>
+
+  <br><br>
+
+</ion-content>

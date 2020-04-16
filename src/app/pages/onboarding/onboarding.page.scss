@@ -1,0 +1,144 @@
+.pular {
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  top: calc(20px + var(--ion-safe-area-top));
+  transform: translate3d(-50%, 0, 0);
+
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: 540px) {
+    width: 480px;
+  }
+
+  display: flex;
+  justify-content: flex-end;
+  
+  ion-button {
+    width: 100px;
+    height: 44px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.botoes {
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  bottom: calc(20px + var(--ion-safe-area-bottom));
+  transform: translate3d(-50%, 0, 0);
+  
+  width: 100%;
+  padding: 0 20px;
+
+  @media (min-width: 540px) {
+    width: 480px;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .botao {
+    transition: all 0.2s ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--ion-color-primary);
+    text-transform: uppercase;
+
+    width: 48%;
+    height: 50px;
+    background: white;
+    box-shadow: 0 8px 8px 0 rgba(24, 29, 33, 0.11),
+      0 9px 9px 0 rgba(22, 27, 44, 0.08);
+    border-radius: 10px;
+
+    &.voltar {
+      box-shadow: none;
+    }
+
+    &.full {
+      width: 100%;
+    }
+  }
+}
+
+ion-content {
+  --background: #004786;
+
+  @media (min-width: 540px) {
+    --background: #070A0E;
+  }
+
+  ion-slides {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 540px) {
+      width: 480px;
+    }
+
+    ion-slide {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+
+      padding: 0 20px;
+
+      color: white;
+      text-align: left;
+
+      .imagem {
+        z-index: -1;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center;
+      }
+
+      .titulo {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 25.2px;
+        color: #FFFFFF;
+        letter-spacing: -0.57px;
+        line-height: 30px;
+      }
+
+      .desc {
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.88);
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+
+      .space {
+        height: 20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#349CF1" offset="0%"></stop>
+            <stop stop-color="#349CF1" stop-opacity="0.220193614" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="25" cy="25" r="7.35294118"></circle>
+        <filter x="-21.1%" y="-14.3%" width="142.3%" height="142.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.10700006" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.193585824 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Versão-Atual" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04---Mapa-" transform="translate(-163.000000, -258.000000)">
+            <g id="Group-6" transform="translate(163.000000, 258.000000)">
+                <circle id="Oval" fill="url(#radialGradient-1)" opacity="0.495089286" cx="25" cy="25" r="25"></circle>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use stroke="#FFFFFF" stroke-width="2.21400012" fill="#349CF1" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

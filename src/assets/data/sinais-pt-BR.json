@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "objectId": "heN9bkTNCW",
+      "nome": "Sensação de desmaio",
+      "createdAt": "2020-03-20T23:06:14.618Z",
+      "updatedAt": "2020-03-20T23:08:27.134Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "YfHRQrrrib",
+      "nome": "Pressão baixa",
+      "createdAt": "2020-03-20T23:06:31.017Z",
+      "updatedAt": "2020-03-20T23:08:33.448Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "QjGPxOgRDB",
+      "nome": "Palidez",
+      "createdAt": "2020-03-20T23:06:37.547Z",
+      "updatedAt": "2020-03-21T21:05:50.735Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "EHiWFhpXCb",
+      "nome": "Boca ou ponta dos dedos roxa",
+      "createdAt": "2020-03-20T23:07:15.568Z",
+      "updatedAt": "2020-03-20T23:08:46.747Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "FK0VelfaYA",
+      "nome": "Respirando muito rápido",
+      "createdAt": "2020-03-20T23:07:38.725Z",
+      "updatedAt": "2020-03-20T23:08:54.025Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "KRGzHZAnbU",
+      "nome": "Nenhum desses sintomas",
+      "createdAt": "2020-03-20T23:08:10.837Z",
+      "updatedAt": "2020-03-20T23:09:07.452Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "objectId": "2Mpxx5AYG3",
+      "nome": "Más de 14 día (s)",
+      "createdAt": "2020-03-20T21:51:51.446Z",
+      "updatedAt": "2020-03-20T21:53:18.373Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "sEaW5HW9uC",
+      "nome": "8 a 14 día (s)",
+      "createdAt": "2020-03-20T21:51:26.238Z",
+      "updatedAt": "2020-03-20T21:53:06.865Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "wvLxcUCwGi",
+      "nome": "1 a 7 día (s)",
+      "createdAt": "2020-03-20T21:51:09.378Z",
+      "updatedAt": "2020-03-20T21:52:59.480Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "TyUZcdWsvS",
+      "nome": "Hoy",
+      "createdAt": "2020-03-20T21:50:52.435Z",
+      "updatedAt": "2020-03-20T21:52:52.982Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

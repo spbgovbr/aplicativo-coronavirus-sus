@@ -1,0 +1,109 @@
+<ion-content scroll="false">
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </div>
+
+    <h1 class="titulo">
+      <span>{{'MAPA.TITULO_PRIMARIO' | translate}}</span> {{'MAPA.TITULO_SECUNDARIO' | translate}}
+    </h1>
+    <div class="status"
+         aria-hidden="true">
+      <div class="aberto">{{'MAPA.ABERTO' | translate}}</div>
+      <div class="fechado">{{'MAPA.FECHADO' | translate}}</div>
+    </div>
+  </div>
+
+  <div *ngIf="!estadoVazio" class="mapa">
+    <mapa (onLoadMap)="onLoadMap($event)" [latitude]="latitude" [longitude]="longitude"></mapa>
+  </div>
+
+  <div class="mapa-card fade-in"
+       *ngIf="cardMapa"
+       ion-fixed>
+    <div class="fechar ion-activatable"
+         role="button"
+         aria-label="Fechar"
+         (click)="cardMapa = !cardMapa">
+      <ion-icon aria-hidden="true"
+                name="close-outline"></ion-icon>
+    </div>
+    <!-- <div class="descricaoTipo">{{markerSelected.ds_tipo_unidade}}</div> -->
+    <div class="nome">
+      {{markerSelected.nomefantasia}}
+    </div>
+    <div class="endereco">
+      {{markerSelected.logradouro}},
+      {{markerSelected.bairro}},
+      {{markerSelected.municipio}} -
+      {{markerSelected.cep}}
+    </div>
+    <div class="status card">
+      <div class="aberto"
+           *ngIf="markerSelected.status === 'Aberto'">
+        {{'MAPA.ABERTO' | translate}}
+      </div>
+      <div class="fechado"
+           *ngIf="markerSelected.status === 'Fechado'">
+        {{'MAPA.FECHADO' | translate}}
+      </div>
+
+      <div class="horario ion-activatable"
+           role="button"
+           (click)="verHorarios = !verHorarios">
+        {{markerSelected.status === 'Aberto' ? ('Fecha às ' + markerSelected.hfimat) : 'Dia / Horário'}}
+        <ion-icon aria-hidden="true"
+                  *ngIf="verHorarios"
+                  name="chevron-up-outline"></ion-icon>
+        <ion-icon aria-hidden="true"
+                  *ngIf="!verHorarios"
+                  name="chevron-down-outline"></ion-icon>
+      </div>
+    </div>
+
+    <div class="disponibilidade"
+         *ngIf="verHorarios">
+      <div class="linha"
+           *ngFor="let linha of markerSelected.disponibilidade">
+        <div class="dia">{{linha.dia}}</div>
+        <div class="horario">{{linha.horario}}</div>
+      </div>
+    </div>
+    <div class="interacoes">
+      <div class="rotas ion-activatable"
+           role="button"
+           (click)="navigate()">
+        <ion-icon src="./assets/images/mapa/rotas.svg"></ion-icon>
+        {{'MAPA.ROTAS' | translate}}
+      </div>
+      <a class="telefone ion-activatable"
+         role="button"
+         href="tel:{{markerSelected.telefone}}">
+        <ion-icon src="./assets/images/mapa/telefone.svg"></ion-icon>
+        {{'MAPA.LIGAR' | translate}}
+      </a>
+    </div>
+  </div>
+
+  <div class="estado-vazio"
+       *ngIf="estadoVazio">
+    <div class="imagem">
+    </div>
+    <div class="titulo">
+      {{'MAPA.ESTADO_VAZIO.TITULO' | translate}}
+    </div>
+    <div class="conteudo">
+      {{'MAPA.ESTADO_VAZIO.SUBTITULO' | translate}}
+    </div>
+    <div class="ok ion-activatable"
+         role="button"
+         (click)="habilitarLocalizacao()">
+      {{'MAPA.ESTADO_VAZIO.BOTAO' | translate}}
+    </div>
+  </div>
+
+</ion-content>

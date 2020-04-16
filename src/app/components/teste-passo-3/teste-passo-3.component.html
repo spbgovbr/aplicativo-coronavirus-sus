@@ -1,0 +1,29 @@
+<div class="content">
+  <h2>
+    {{'TESTE.TESTE3.DOENCAS' | translate}}
+  </h2>
+
+  <div class="itens">
+    <div class="item ion-activatable"
+         role="button"
+         *ngFor="let item of doencas"
+         [ngClass]="{'selecionado': item.selecionado }"
+         (click)="selecionarDoenca(item)">
+      {{item.nome}}
+    </div>
+  </div>
+
+  <h2>
+    {{'TESTE.TESTE3.SINAIS' | translate}}
+  </h2>
+
+  <div class="itens">
+    <div class="item ion-activatable"
+         role="button"
+         *ngFor="let item of sintomas"
+         [ngClass]="{'selecionado': item.selecionado }"
+         (click)="selecionarSintoma(item)">
+      {{item.nome}}
+    </div>
+  </div>
+</div>

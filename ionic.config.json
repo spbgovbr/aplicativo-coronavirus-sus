@@ -1,0 +1,7 @@
+{
+  "name": "Coronavirus-SUS",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

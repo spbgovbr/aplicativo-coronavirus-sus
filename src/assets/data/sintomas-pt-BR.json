@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "objectId": "0nzvGcgAuH",
+      "nome": "Febre",
+      "createdAt": "2020-03-20T21:27:49.362Z",
+      "updatedAt": "2020-03-22T12:47:53.185Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "LhKgIuDqwh",
+      "nome": "Nenhum desses sintomas",
+      "createdAt": "2020-03-20T21:41:17.613Z",
+      "updatedAt": "2020-03-20T21:41:31.505Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "9br9ZE5uIY",
+      "nome": "Dor de Garganta",
+      "createdAt": "2020-03-20T21:30:17.158Z",
+      "updatedAt": "2020-03-20T21:30:25.066Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "8cSGBNsoQH",
+      "nome": "Dificuldade de Respirar",
+      "createdAt": "2020-03-20T21:29:49.561Z",
+      "updatedAt": "2020-03-20T21:30:00.322Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "AhPbBY42Wo",
+      "nome": "Tosse",
+      "createdAt": "2020-03-20T21:29:09.725Z",
+      "updatedAt": "2020-03-20T21:29:29.733Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

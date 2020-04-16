@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "objectId": "PBkB5EQtUd",
+      "nome": "Heart disease",
+      "createdAt": "2020-03-20T22:32:45.621Z",
+      "updatedAt": "2020-03-20T22:35:34.170Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "1BPFS059nK",
+      "nome": "High pressure",
+      "createdAt": "2020-03-20T22:33:00.932Z",
+      "updatedAt": "2020-03-20T22:35:42.625Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "GdpGki5hdH",
+      "nome": "Chronic Respiratory Disease",
+      "createdAt": "2020-03-20T22:33:43.526Z",
+      "updatedAt": "2020-03-20T22:35:58.332Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "V72kdKl20D",
+      "nome": "Chronic Kidney Disease",
+      "createdAt": "2020-03-20T22:34:14.850Z",
+      "updatedAt": "2020-03-20T22:36:05.531Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "iQDBQ2SZv8",
+      "nome": "I do not have",
+      "createdAt": "2020-03-20T22:35:13.561Z",
+      "updatedAt": "2020-03-20T22:36:11.759Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "aaoUzVPz8T",
+      "nome": "Diabetes",
+      "createdAt": "2020-03-21T21:07:48.458Z",
+      "updatedAt": "2020-03-21T21:08:14.576Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "objectId": "2CFT9OVbI6",
+      "nome": "Enfermedad cardíaca",
+      "createdAt": "2020-03-20T22:50:22.225Z",
+      "updatedAt": "2020-03-20T22:59:04.919Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "wUdBXumBmU",
+      "nome": "Hipertensión",
+      "createdAt": "2020-03-20T22:50:45.367Z",
+      "updatedAt": "2020-03-20T23:00:02.841Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "Yu3RRPrBBj",
+      "nome": "Enfermedad Respiratoria Crónica",
+      "createdAt": "2020-03-20T22:57:23.153Z",
+      "updatedAt": "2020-03-20T23:01:30.688Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "4AKUiUeiU6",
+      "nome": "Enfermedad renal crónica",
+      "createdAt": "2020-03-20T22:57:45.673Z",
+      "updatedAt": "2020-03-20T23:02:03.624Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "U9ew3NbyXO",
+      "nome": "No tengo",
+      "createdAt": "2020-03-20T22:58:47.767Z",
+      "updatedAt": "2020-03-20T23:01:57.010Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "cotnD3X0FW",
+      "nome": "Diabetes",
+      "createdAt": "2020-03-21T21:07:41.853Z",
+      "updatedAt": "2020-03-21T21:08:03.985Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

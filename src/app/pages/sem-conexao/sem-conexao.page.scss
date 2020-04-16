@@ -1,0 +1,83 @@
+ion-content {
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+
+.votlar {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+
+  &.ion-activated:before {
+    border-radius: 0 0 0 30px;
+  }
+
+  ion-icon {
+    font-size: 30px;
+    color: #808080;
+  }
+}
+
+.imagem {
+  margin: 10px auto;
+  width: 80px;
+  height: 80px;
+  background-size: 80px auto;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/assets/images/modais/internet.svg');
+}
+
+.titulo {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 22.2px;
+  color: #16222F;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 30px;
+
+  span {
+    font-weight: 800;
+  }
+}
+
+.conteudo {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  color: #6B8097;
+  letter-spacing: -0.3px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.ok {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  width: 100%;
+  height: 60px;
+  background: #0088FF;
+  box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+  border-radius: 10px;
+
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0;
+}

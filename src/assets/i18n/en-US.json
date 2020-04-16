@@ -1,0 +1,229 @@
+{
+  "SEM_CONEXAO": {
+    "TITULO": "No internet connection",
+    "SUBTITULO": "To get the updated data, an internet connection is required"
+  },
+  "ONBOARD": {
+    "PULAR": "SKIP",
+    "PROXIMO": "NEXT",
+    "ENTRAR": "GO"
+  },
+  "INICIO": {
+    "TAB_NAME": "Home",
+    "SAUDACAO": "Hello!",
+    "PERGUNTA_SAUDACAO": "How is your health at the moment?",
+    "BEM": "GOOD",
+    "MAL": "BAD",
+    "UBS": {
+      "TITULO": "Health Units",
+      "SUBTITULO": "Find the ones closest to you"
+    },
+    "NOTICIAS": {
+      "TITULO": "News",
+      "SUBTITULO": "Update with official information"
+    },
+    "VER_MAIS": "SEE MORE TIPS",
+    "VERSAO": "Version"
+  },
+  "DICAS": {
+    "TAB_NAME": "Tips",
+    "TITULO_PRIMARIO": "Official",
+    "TITULO_SECUNDARIO": "Tips",
+    "SUBTITULO": "What you need to know and do.",
+    "PLACEHOLDER_BUSCA": "Search here...",
+    "ESTADO_VAZIO": "No results found"
+  },
+  "NOTICIAS": {
+    "TAB_NAME": "News",
+    "TITULO_PRIMARIO": "News",
+    "TITULO_SECUNDARIO": "MS",
+    "SUBTITULO": "Follow the Ministry of Health's Twitter.",
+    "TWITTER": "Official",
+    "OFICIAL": "Twitter",
+    "DESCRICAO_FAKE_NEWS": "Check if it is a fact or if it is fake what goes around ..."
+  },
+  "ALERTAS": {
+    "TAB_NAME": "Alerts",
+    "TITULO": "Alerts",
+    "SUBTITULO": "Receive important notifications.",
+    "ESTADO_VAZIO": {
+      "TITULO": "No alerts received so far",
+      "SUBTITULO": "When there is a notification, this is where it will be stored"
+    }
+  },
+  "SITUACAO": {
+    "TAB_NAME": "Situation",
+    "TITULO_PRIMARIO": "Epidemiological",
+    "TITULO_SECUNDARIO": "Situation",
+    "SUBTITULO": "Ministry of Health",
+    "CASOS_CONFIRMADOS": "Confirmed Cases",
+    "OBITOS": "Deaths",
+    "LETALIDADE": "Lethality",
+    "CONFIRMADOS": "Confirmed",
+    "PLACEHOLDER": "Search by state ...",
+    "ATUALIZADO": "Updated",
+    "TEXTO_BANNER": "Access the full panel here",
+    "ESTADO_VAZIO": {
+      "TITULO": "State not found",
+      "SUBTITULO": "Search for a Brazilian state"
+    }
+  },
+  "MAPA": {
+    "TITULO_PRIMARIO": "Units",
+    "TITULO_SECUNDARIO": "of health",
+    "ABERTO": "Open",
+    "FECHADO": "Close",
+    "ROTAS": "ROUTES",
+    "LIGAR": "CALL",
+    "FECHA": "Closed at",
+    "ESTADO_VAZIO": {
+      "TITULO": "Location permission",
+      "SUBTITULO": "To find a Health Unit near you, we need your location.",
+      "BOTAO": "UPDATE",
+      "BOTAO_HABILITAR": "ENABLE LOCATION"
+    }
+  },
+  "OBRIGADO_CONTRIBUICAO": {
+    "AGRADECIMENTO_IMAGEM": "Great! <br/> Thank you <br/> for contributing.",
+    "DICA1": "Wash your hands often with soap and water, or sanitize with 70% alcohol gel.",
+    "DICA2": "Cover your mouth and nose with a tissue when you cough and sneeze and throw it in the trash after use, or protect with your <br/> forearm (never with your hands).",
+    "DICA3": "Avoid crowded places.",
+    "DICA4": "Do not share personal items.",
+    "DUVIDA": {
+      "PRIMEIRA_PARTE": "In case of doubts,",
+      "SEGUNDA_PARTE": "Ministry of Health, or look for a health facility.",
+      "LINK": " call the Health Dial 136 "
+    },
+    "DICAS": {
+      "TITULO":"Official Tips",
+      "SUBTITULO": "Check out tips and procedures"
+    },
+    "NOTICIAS": {
+      "TITULO": "News",
+      "SUBTITULO": "See the Ministry of Health's twitter"
+    }
+  },
+  "TESTE": {
+    "TITULO": "Make a self-assessment of your health status.",
+    "BOTAO": "Confirm",
+    "TESTE1": {
+      "SINTOMAS": "What symptoms do you feel?",
+      "DURACOES": "How long have you been experiencing these symptoms?"
+    },
+    "TESTE2": {
+      "IDADE": "How old are you?",
+      "SEXO": {
+        "TITULO": "What is your gender?",
+        "MASCULINO": "Male",
+        "FEMININO": "Feminine"
+      }
+    },
+    "TESTE3": {
+      "DOENCAS": "Do you have any of these diseases?",
+      "SINAIS": "Other vestige and/or symptoms?"
+    }
+  },
+  "CASO_GRAVE": {
+    "TITULO_IMAGEM": "Urgency!",
+    "TEXTO_DESTACADO": "Based on your answers, it is likely that this situation would fit as a suspected case of coronavirus 2019 disease (COVID-19). However, this is not a diagnosis. <br/> <br/> The orientation is that you seek care at a nearest emergency service for clinical evaluation or dial SAMU 192.",
+    "LIGAR": "Call",
+    "ATENDIMENTO": "Pre-clinical <br/> care",
+    "TITULO_DICAS": "If you choose to go to an emergency service, follow the following personal protection measures and respiratory label:",
+    "DICA1": "Choose to have a companion to help you get to the emergency service. The companion must wear a face mask and constantly wash hands with soap and water or gel alcohol.",
+    "DICA2": "Immediately seek the service, do not deviate and avoid public transport.",
+    "DICA3": "Wear a face mask to prevent transmission from other people on the way to the emergency room.",
+    "DICA4": "Wash your hands often with soap and water or hygiene with 70% gel alcohol.",
+    "DICA5": "Cover your mouth and nose with a tissue when coughing and / or sneezing and throw in the trash after use, or protect with your forearm (never with your hands).",
+    "DICA6": "Avoid crowded places. Do not share personal items."
+  },
+  "CASO_IMPROVAVEL": {
+    "TITULO_IMAGEM": "Case <br/> Unlikely",
+    "TEXTO_DESTACADO": "Based on your answers, it is likely that this situation does NOT qualify as a suspected case of coronavirus 2019 disease (COVID-19). Maintain precautionary and preventive behaviors, practicing breathing etiquette:",
+    "TITULO_DICAS": "When traveling to a health facility, follow the following personal protection measures and respiratory label:",
+    "DICA1": "Wash your hands frequently with soap and water or sanitize with 70% alcohol gel.",
+    "DICA2": "Cover your mouth and nose with a tissue when coughing and sneezing and throw in the trash after use, or protect with your forearm (never with your hands).",
+    "DICA3": "Avoid touching your eyes, nose and mouth with your unwashed hands.",
+    "DICA4": "Avoid crowded places.",
+    "DICA5": "Do not share personal effects.",
+    "DICA6": "Avoid close contact with people who have a cold or who have flu symptoms."
+  },
+  "CASO_ISOLAMENTO": {
+    "TITULO_IMAGEM": "Insulation <br/> Home",
+    "TITULO_DICAS": "General Concerns:",
+    "DICA1": "Every time you wash your hands with soap and water, give preference to paper towels. If it is not possible, use a cloth towel and change it every time it gets wet.",
+    "DICA2": "All residents of the house must cover their mouth and nose when they cough or sneeze, either with their hands or masks. Wash your hands and throw the masks after.",
+    "DICA3": "Clean frequently (more than once a day) the surfaces that are frequently touched with a solution containing bleach (1 part of bleach to 99 parts of water); do the same for bathrooms and toilets.",
+    "DICA4": "Wash the patient's personal clothes, bedding and bathing suits with regular soap and water at 60-90ºC, allow to dry.",
+    "CARDS": {
+      "INFECTADO": "Infected",
+      "CUIDADOR": "Caregiver",
+      "SUBTITULO": "Know the precautions"
+    }
+  },
+  "CASO_ISOLAMENTO_INFECTADO": {
+    "TITULO": "Infected <br/> Precautions",
+    "DICA1": "Stay in an isolated, well-ventilated room without division with other family members.",
+    "DICA2": "If it is not possible to isolate the patient in a single room, keep at least 1 meter away from the patient. Sleeping in a separate bed (exception: mothers who are breastfeeding must continue breastfeeding with the use of a mask and hygiene measures, such as constant hand washing).",
+    "DICA3": "Limit the patient's movement around the home. Shared house locations (such as kitchen, bathroom, etc.) must be well ventilated.",
+    "DICA4": "Use of surgical mask. If the patient cannot tolerate staying for a long time, perform respiratory hygiene measures more frequently; change surgical mask whenever it is wet or damaged.",
+    "DICA5": "When going to the bathroom or other mandatory environment, the patient must wear a mask.",
+    "DICA6": "No visits to the patient.",
+    "DICA7": "The patient can only leave home in an emergency. If necessary, leave with a mask and avoid crowds, preferring individual or walking transport whenever possible."
+  },
+  "CASO_ISOLAMENTO_CUIDADOR": {
+    "TITULO": "Caregiver <br/> precautions",
+    "DICA1": "The caregiver must wear a mask (disposable) when he is close to the patient. If the mask is wet or with secretions, it must be changed immediately. Never touch or touch the mask while you are near the patient. After removing the mask, the caregiver should wash his hands.",
+    "DICA2": "Hand hygiene should be performed whenever they appear dirty, before / after contact with the patient, before / after going to the bathroom, before / after cooking and eating, or whenever deemed necessary. Alcohol gel can be used when hands are dry and soap and water when hands appear oily or dirty.",
+    "DICA3": "Whenever you wash your hands with soap and water, give preference to paper towels. If it is not possible, use a cloth towel and change it every time it gets wet."
+  },
+  "CASO_SUSPEITO": {
+    "TITULO": "Case <br/> suspect <br/> or likely",
+    "LIGAR": "CALL ME",
+    "ATENDIMENTO": "We have an exclusive service channel, would you like the Ministry of Health to contact you?",
+    "TEXTO_DESTACADO": "Based on your answers, it is likely that this situation fits as a suspected or probable case of coronavirus 2019 disease (COVID-19). However, this is not a diagnosis. Guidance is that you seek care at a health center closest to you for clinical evaluation.",
+    "TITULO_DICAS": "When traveling to a health facility, follow the following personal protection measures and respiratory label:",
+    "DICA1": "Use a face mask to prevent transmission from other people during the journey to the health unit",
+    "DICA2": "Wash your hands frequently with soap and water, or sanitize with 70% alcohol gel",
+    "DICA3": "Cover your mouth and nose with a tissue when coughing and sneezing and throw in the trash after use, or protect with your forearm (never with your hands)",
+    "DICA4": "Avoid crowded places",
+    "DICA5": "Do not share personal items",
+    "TEXTO_RESTANTE": "During the service, you will be evaluated by a doctor who can request additional tests to establish a diagnosis, as well as start the appropriate treatment. Depending on the case, he may recommend hospital or home isolation. If isolation in your own home is recommended, you should follow the recommendations for home isolation listed in the tips. In any case, avoid social contact with other people, whether at work, at school or at leisure, while symptoms persist."
+  },
+  "ATENDIMENTO_PRE_CLINICO_TELEFONE": {
+    "TITULO_PRINCIPAL": "Pre-clinical care",
+    "SUBTITULO_PRIMEIRA_PARTE": "We identified that you called",
+    "SUBTITULO_SEGUNDA_PARTE": "to get a phone call.",
+    "PASSO_1": {
+      "TITULO": "Enter a name and phone number for contact.",
+      "PLACEHOLDER": "Name"
+    },
+    "PASSO_2": {
+      "TITULO": "Thanks!",
+      "SUBTITULO": "Soon we will contact you by phone"
+    }
+  },
+  "ATENDIMENTO_PRE_CLINICO": {
+    "TITULO_PRINCIPAL": "Pre-clinical care",
+    "SUBTITULO_PRIMEIRA_PARTE": "We identified that you called",
+    "SUBTITULO_SEGUNDA_PARTE": "to get a phone call.",
+    "PASSO_1": {
+      "TITULO": "Was your telephone service performed?",
+      "BOTAO_SIM": "Yes",
+      "BOTAO_NAO": "Not"
+    },
+    "PASSO_2": {
+      "TITULO": "Please identify yourself with your CPF",
+      "BOTAO_SEM_CPF": "I don't have CPF"
+    },
+    "PASSO_3": {
+      "TITULO": "Please identify yourself",
+      "PLACEHOLDER_1": "Document type",
+      "PLACEHOLDER_2": "Document number",
+      "BOTAO_CPF": "I have CPF"
+    },
+    "PASSO_4": {
+      "TITULO": "Thanks!",
+      "SUBTITULO": "Keep informed with news and prevention tips."
+    }
+  }
+}

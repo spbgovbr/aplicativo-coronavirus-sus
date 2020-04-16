@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "objectId": "hASIBV88aH",
+      "nome": "None of these symptoms",
+      "createdAt": "2020-03-20T21:41:52.960Z",
+      "updatedAt": "2020-03-20T21:42:08.494Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "AMv6kztnfp",
+      "nome": "Sore throat",
+      "createdAt": "2020-03-20T21:33:44.388Z",
+      "updatedAt": "2020-03-20T21:33:55.974Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "HTPGGRH6E3",
+      "nome": "Difficulty Breathing",
+      "createdAt": "2020-03-20T21:32:59.558Z",
+      "updatedAt": "2020-03-20T21:33:10.331Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "pAHt70eDEB",
+      "nome": "Cough",
+      "createdAt": "2020-03-20T21:31:58.701Z",
+      "updatedAt": "2020-03-20T21:32:23.288Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "HpOQrTn601",
+      "nome": "Fever",
+      "createdAt": "2020-03-20T21:31:10.303Z",
+      "updatedAt": "2020-03-20T21:31:33.650Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

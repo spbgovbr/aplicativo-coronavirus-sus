@@ -1,0 +1,73 @@
+<ion-content>
+
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="imagem" [innerHTML]="'CASO_GRAVE.TITULO_IMAGEM' | translate"></div>
+
+  <div class="veredito" [innerHTML]="'CASO_GRAVE.TEXTO_DESTACADO' | translate"></div>
+
+  <div class="atendimento-red">
+    <div class="info">
+      <span>192</span>
+    </div>
+
+    <a class="ligar ion-activatable"
+       role="button"
+       href="tel:192">
+      {{'CASO_GRAVE.LIGAR' | translate}}
+    </a>
+  </div>
+
+  <div class="atendimento-pre">
+    <div class="info">
+      <p [innerHTML]="'CASO_GRAVE.ATENDIMENTO' | translate"></p>
+      <span>0800 591 8899</span>
+    </div>
+
+    <a class="ligar ion-activatable"
+       role="button"
+       href="tel:0800 591 8899" (click)="openAtendimentoPreClinico()">
+      {{'CASO_GRAVE.LIGAR' | translate}}
+    </a>
+  </div>
+
+  <div class="pre-itens" [innerHTML]="'CASO_GRAVE.TITULO_DICAS' | translate"> </div>
+
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA1' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA2' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA3' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA4' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA5' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_GRAVE.DICA6' | translate"></div>
+
+  <div class="encontre-dicas">
+    <div class="encontre ion-activatable"
+         role="button"
+         (click)="encontre()">
+      <div class="icone"></div>
+      <div class="titulo">{{'INICIO.UBS.TITULO' | translate}}</div>
+      <div class="sub-titulo">{{'INICIO.UBS.SUBTITULO' | translate}}</div>
+    </div>
+    <div class="dicas ion-activatable"
+         role="button"
+         (click)="verDicas()">
+      <div class="icone"></div>
+      <div class="titulo">{{'OBRIGADO_CONTRIBUICAO.DICAS.TITULO'| translate}}</div>
+      <div class="sub-titulo">{{'OBRIGADO_CONTRIBUICAO.DICAS.SUBTITULO'| translate}}</div>
+    </div>
+  </div>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    OK
+  </div>
+
+</ion-content>

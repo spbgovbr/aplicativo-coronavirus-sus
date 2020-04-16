@@ -1,0 +1,229 @@
+{
+  "SEM_CONEXAO": {
+    "TITULO": "Sin conexión a internet",
+    "SUBTITULO": "Para obtener los datos actualizados, se requiere una conexión a Internet"
+  },
+  "ONBOARD": {
+    "PULAR": "SALTAR",
+    "PROXIMO": "SIGUIENTE",
+    "ENTRAR": "ENTRAR"
+  },
+  "INICIO": {
+    "TAB_NAME": "Principal",
+    "SAUDACAO": "Hola!",
+    "PERGUNTA_SAUDACAO": "¿Cómo está tu salud en este momento?",
+    "BEM": "BIEN",
+    "MAL": "MAL",
+    "UBS": {
+      "TITULO": "Unidades de salud",
+      "SUBTITULO": "Encuentra los más cercanos a ti"
+    },
+    "NOTICIAS": {
+      "TITULO": "Noticias",
+      "SUBTITULO": "Actualización con información oficial"
+    },
+    "VER_MAIS": "VER MÁS CONSEJOS",
+    "VERSAO": "Versión"
+  },
+  "DICAS": {
+    "TAB_NAME": "Consejos",
+    "TITULO_PRIMARIO": "Consejos",
+    "TITULO_SECUNDARIO": "Oficiales",
+    "SUBTITULO": "Lo que necesitas saber y hacer.",
+    "PLACEHOLDER_BUSCA": "Busque aquí...",
+    "ESTADO_VAZIO": "Ningún resultado encontrado"
+  },
+  "NOTICIAS": {
+    "TAB_NAME": "Noticias",
+    "TITULO_PRIMARIO": "Noticias",
+    "TITULO_SECUNDARIO": "MS",
+    "SUBTITULO": "Sigue el Twitter del Ministerio de Salud.",
+    "TWITTER": "Twitter",
+    "OFICIAL": "Oficial",
+    "DESCRICAO_FAKE_NEWS": "Comprueba si es un hecho o si es falso lo que sucede ..."
+  },
+  "ALERTAS": {
+    "TAB_NAME": "Alertas",
+    "TITULO": "Alertas",
+    "SUBTITULO": "Recibe notificaciones importantes.",
+    "ESTADO_VAZIO": {
+      "TITULO": "No hay alertas recibidas hasta ahora",
+      "SUBTITULO": "Cuando hay una notificación, aquí es donde se almacenará"
+    }
+  },
+  "SITUACAO": {
+    "TAB_NAME": "Situación",
+    "TITULO_PRIMARIO": "Situación",
+    "TITULO_SECUNDARIO": "Epidemiológica",
+    "SUBTITULO": "Ministerio de Salud",
+    "CASOS_CONFIRMADOS": "Casos Confirmados",
+    "OBITOS": "Muertes",
+    "LETALIDADE": "Letalidad",
+    "CONFIRMADOS": "Confirmados",
+    "PLACEHOLDER": "Buscar por estado ...",
+    "ATUALIZADO": "Actualizado",
+    "TEXTO_BANNER": "Acceda al panel completo aquí",
+    "ESTADO_VAZIO": {
+      "TITULO": "No se encontró estado",
+      "SUBTITULO": "Busca un estado brasileño"
+    }
+  },
+  "MAPA": {
+    "TITULO_PRIMARIO": "Unidades",
+    "TITULO_SECUNDARIO": "de salud",
+    "ABERTO": "Abierto",
+    "FECHADO": "Cerrado",
+    "ROTAS": "RUTAS",
+    "LIGAR": "CONECTAR",
+    "FECHA": "Cerrado a las",
+    "ESTADO_VAZIO": {
+      "TITULO": "Permiso de ubicación",
+      "SUBTITULO": "Para encontrar una Unidad de Salud cerca de usted, necesitamos su ubicación.",
+      "BOTAO": "ACTUALIZAR",
+      "BOTAO_HABILITAR": "HABILITAR UBICACIÓN"
+    }
+  },
+  "OBRIGADO_CONTRIBUICAO": {
+    "AGRADECIMENTO_IMAGEM": "Genial <br/> Gracias <br/> por contribuir.",
+    "DICA1": "Lávese las manos con frecuencia con agua y jabón, o desinfecte con gel de alcohol al 70%.",
+    "DICA2": "Cubra su boca y nariz con un pañuelo de papel cuando tosa y estornude y tírelo a la basura después de usarlo, o protéjalo con su antebrazo <br/> (nunca con sus manos).",
+    "DICA3": "Evita los lugares llenos de gente.",
+    "DICA4": "No comparta artículos personales.",
+    "DUVIDA": {
+      "PRIMEIRA_PARTE": "En caso de duda,",
+      "SEGUNDA_PARTE": "Ministerio de Salud, o busque un centro de salud.",
+      "LINK": " llame al Health Dial 136 "
+    },
+    "DICAS": {
+      "TITULO":"Consejos oficiales",
+      "SUBTITULO": "Consulte consejos y procedimientos"
+    },
+    "NOTICIAS": {
+      "TITULO": "Noticias",
+      "SUBTITULO": "Vea el twitter del Ministerio de Salud"
+    }
+  },
+  "TESTE": {
+    "TITULO": "Realice una autoevaluación de su estado de salud.",
+    "BOTAO": "Confirmar",
+    "TESTE1": {
+      "SINTOMAS": "¿Qué síntomas tienes?",
+      "DURACOES": "Cuánto tiempo llevas experimentando estos síntomas?"
+    },
+    "TESTE2": {
+      "IDADE": "¿Cuantos años tienes?",
+      "SEXO": {
+        "TITULO": "¿Cual es tu sexo?",
+        "MASCULINO": "Hombre",
+        "FEMININO": "Hembra"
+      }
+    },
+    "TESTE3": {
+      "DOENCAS": "¿Tienes alguna de estas enfermedades?",
+      "SINAIS": "¿Otras pistas y/o síntomas?"
+    }
+  },
+  "CASO_GRAVE": {
+    "TITULO_IMAGEM": "Urgencia!",
+    "TEXTO_DESTACADO": "Según sus respuestas, es probable que esta situación se ajuste como un caso sospechoso de enfermedad por coronavirus 2019 (COVID-19). Sin embargo, esto no es un diagnóstico. <br/> <br/> La orientación es que busque atención en un servicio de emergencia más cercano para evaluación clínica o marque SAMU 192.",
+    "LIGAR": "Llamar",
+    "ATENDIMENTO": "Cuidados <br/> preclínicos",
+    "TITULO_DICAS": "Si elige ir a un servicio de emergencia, siga las siguientes medidas de protección personal y la etiqueta respiratoria:",
+    "DICA1": "Elija tener un acompañante que lo ayude a llegar al servicio de emergencia. El acompañante debe usar una máscara facial y lavarse las manos constantemente con agua y jabón o alcohol en gel.",
+    "DICA2": "Busque inmediatamente el servicio, no se desvíe y evite el transporte público.",
+    "DICA3": "Use una máscara facial para evitar la transmisión de otras personas en el camino a la sala de emergencias.",
+    "DICA4": "Lávese las manos con frecuencia con agua y jabón o con un 70% de alcohol en gel.",
+    "DICA5": "Cúbrase la boca y la nariz con un pañuelo desechable al toser o estornudar y tírelo a la basura después de usarlo, o protéjalo con el antebrazo (nunca con las manos).",
+    "DICA6": "Evita los lugares llenos de gente. No comparta artículos personales."
+  },
+  "CASO_IMPROVAVEL": {
+    "TITULO_IMAGEM": "Caso <br/> Poco Probable",
+    "TEXTO_DESTACADO": "Según sus respuestas, es probable que esta situación NO califique como un caso sospechoso de enfermedad por coronavirus 2019 (COVID-19). Mantener la conducta de preocupación y prevención, practicando la etiqueta respiratoria:",
+    "TITULO_DICAS": "Cuando viaje a un centro de salud, siga las siguientes medidas de protección personal y la etiqueta respiratoria:",
+    "DICA1": "Lávese las manos con frecuencia con agua y jabón o desinfecte con gel de alcohol al 70%.",
+    "DICA2": "Cúbrase la boca y la nariz con un pañuelo cuando tosa y estornude y tírelo a la basura después de usarlo, o protéjalo con el antebrazo (nunca con las manos).",
+    "DICA3": "Evite tocarse los ojos, la nariz y la boca con las manos sin lavar.",
+    "DICA4": "Evita los lugares llenos de gente.",
+    "DICA5": "No comparta artículos personales.",
+    "DICA6": "Evite el contacto cercano con personas que tienen síntomas de resfriado o gripe."
+  },
+  "CASO_ISOLAMENTO": {
+    "TITULO_IMAGEM": "Aislamiento <br/> Inicio",
+    "TITULO_DICAS": "Preocupaciones generales:",
+    "DICA1": "Cada vez que te laves las manos con agua y jabón, dale preferencia a las toallas de papel. Si no es posible, use una toalla de tela y cámbiela cada vez que se moje.",
+    "DICA2": "Todos los residentes de la casa deben cubrirse la boca y la nariz cuando tosen o estornudan, ya sea con las manos o con máscaras. Lávate las manos y tira las máscaras después.",
+    "DICA3": "Limpie con frecuencia (más de una vez al día) las superficies que se tocan con frecuencia con una solución que contenga cloro (1 parte de cloro por 99 partes de agua); hacer lo mismo para baños y aseos.",
+    "DICA4": "Lave la ropa personal del paciente, la ropa de cama y de baño con agua y jabón regular a 60-90ºC, déjelo secar.",
+    "CARDS": {
+      "INFECTADO": "Infectado",
+      "CUIDADOR": "Cuidador",
+      "SUBTITULO": "Conoce las precauciones"
+    }
+  },
+  "CASO_ISOLAMENTO_CUIDADOR": {
+    "TITULO": "Precauciones <br/> del cuidador",
+    "DICA1": "El cuidador debe usar una máscara (desechable) cuando está cerca del paciente. Si la máscara está húmeda o tiene secreciones, debe cambiarse de inmediato. Nunca toque ni toque la máscara mientras esté cerca del paciente. Después de quitarse la máscara, el cuidador debe lavarse las manos.",
+    "DICA2": "La higiene de las manos debe realizarse siempre que aparezcan sucias, antes / después del contacto con el paciente, antes / después de ir al baño, antes / después de cocinar y comer, o cuando se considere necesario. El gel de alcohol se puede usar cuando las manos están secas y agua y jabón cuando las manos se ven grasosas o sucias.",
+    "DICA3": "Siempre que te laves las manos con agua y jabón, dale preferencia a las toallas de papel. Si no es posible, use una toalla de tela y cámbiela cada vez que se moje."
+  },
+  "CASO_ISOLAMENTO_INFECTADO": {
+    "TITULO": "Precauciones <br/> del infectado",
+    "DICA1": "Permanecer en una habitación aislada, bien ventilada, sin división con otros miembros de la familia.",
+    "DICA2": "Si no es posible aislar al paciente en una habitación individual, manténgalo al menos a 1 metro de distancia del paciente. Dormir en una cama separada (excepción: las madres que están amamantando deben continuar amamantando con el uso de una máscara y medidas de higiene, como lavarse las manos constantemente).",
+    "DICA3": "Limite el movimiento del paciente por la casa. Las ubicaciones compartidas de la casa (como cocina, baño, etc.) deben estar bien ventiladas.",
+    "DICA4": "Uso de mascarilla quirúrgica. Si el paciente no puede tolerar quedarse por mucho tiempo, realice medidas de higiene respiratoria con mayor frecuencia; cambie la mascarilla quirúrgica cuando esté mojada o dañada.",
+    "DICA5": "Al ir al baño u otro entorno obligatorio, el paciente debe usar una máscara.",
+    "DICA6": "No hay visitas al paciente.",
+    "DICA7": "El paciente solo puede salir de casa en caso de emergencia. Si es necesario, salga con una máscara y evite las multitudes, prefiriendo el transporte individual o a pie siempre que sea posible."
+  },
+  "CASO_SUSPEITO": {
+    "TITULO": "Caso <br/> Sospechoso <br/> o probable",
+    "LIGAR": "LLÁMAME",
+    "ATENDIMENTO": "Tenemos un canal de servicio exclusivo, ¿le gustaría que el Ministerio de Salud lo contacte?",
+    "TEXTO_DESTACADO": "Según sus respuestas, es probable que esta situación se ajuste como un caso sospechoso o probable de enfermedad por coronavirus 2019 (COVID-19). Sin embargo, esto no es un diagnóstico. La guía es que busque atención en un centro de salud más cercano para su evaluación clínica.",
+    "TITULO_DICAS": "Cuando viaje a un centro de salud, siga las siguientes medidas de protección personal y la etiqueta respiratoria:",
+    "DICA1": "Use una máscara facial para evitar la transmisión de otras personas durante el viaje a la unidad de salud.",
+    "DICA2": "Lávese las manos frecuentemente con agua y jabón, o desinfecte con gel de alcohol al 70%",
+    "DICA3": "Cúbrase la boca y la nariz con un pañuelo desechable al toser y estornudar y tírelo a la basura después de usarlo, o protéjalo con el antebrazo (nunca con las manos)",
+    "DICA4": "Evita los lugares llenos de gente",
+    "DICA5": "No comparta artículos personales.",
+    "TEXTO_RESTANTE": "Durante el servicio, será evaluado por un médico que puede solicitar pruebas adicionales para establecer un diagnóstico y comenzar el tratamiento adecuado. Según el caso, puede recomendar el aislamiento hospitalario o domiciliario. Si se recomienda el aislamiento en su propio hogar, debe seguir las recomendaciones para el aislamiento del hogar que figuran en los consejos. En cualquier caso, evite el contacto social con otras personas, ya sea en el trabajo, en la escuela o en el tiempo libre, mientras los síntomas persistan."
+  },
+  "ATENDIMENTO_PRE_CLINICO_TELEFONE": {
+    "TITULO_PRINCIPAL": "Cuidados preclínicos",
+    "SUBTITULO_PRIMEIRA_PARTE": "Descubrimos que llamó al",
+    "SUBTITULO_SEGUNDA_PARTE": "para recibir una llamada telefónica.",
+    "PASSO_1": {
+      "TITULO": "Ingrese un nombre y número de teléfono para el contacto.",
+      "PLACEHOLDER": "Nombre"
+    },
+    "PASSO_2": {
+      "TITULO": "¡Gracias!",
+      "SUBTITULO": "Pronto nos comunicaremos con usted por teléfono."
+    }
+  },
+  "ATENDIMENTO_PRE_CLINICO": {
+    "TITULO_PRINCIPAL": "Cuidados preclínicos",
+    "SUBTITULO_PRIMEIRA_PARTE": "Descubrimos que llamó al",
+    "SUBTITULO_SEGUNDA_PARTE": "para recibir una llamada telefónica.",
+    "PASSO_1": {
+      "TITULO": "¿Se realizó su servicio telefónico?",
+      "BOTAO_SIM": "Si",
+      "BOTAO_NAO": "No"
+    },
+    "PASSO_2": {
+      "TITULO": "Identifícate con tu CPF",
+      "BOTAO_SEM_CPF": "No tengo CPF"
+    },
+    "PASSO_3": {
+      "TITULO": "Por favor identifícate",
+      "PLACEHOLDER_1": "Tipo de documento",
+      "PLACEHOLDER_2": "Número de documento",
+      "BOTAO_CPF": "Tengo CPF"
+    },
+    "PASSO_4": {
+      "TITULO": "¡Gracias!",
+      "SUBTITULO": "Manténgase informado con noticias y consejos de prevención."
+    }
+  }
+}

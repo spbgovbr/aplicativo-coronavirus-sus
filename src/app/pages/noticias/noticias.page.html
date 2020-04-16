@@ -1,0 +1,114 @@
+<ion-content [scrollEvents]="true"
+             (ionScroll)="onScroll($event)">
+
+  <div class="header desktop-hidden"
+       slot="fixed"
+       [ngClass]="{'change-header': changeHeader }">
+
+    <h1 class="noticias-titulo">
+      <span>{{'NOTICIAS.TITULO_PRIMARIO' | translate}}</span> {{'NOTICIAS.TITULO_SECUNDARIO' | translate}}
+    </h1>
+    <h2 class="noticias-sub-titulo">
+      {{'NOTICIAS.SUBTITULO' | translate}}
+    </h2>
+  </div>
+
+  <div class="fake-news ion-activatable"
+       role="button"
+       (click)="openDetalheFakeNew()">
+    <div class="fake-news-titulo">
+      Fake News?
+    </div>
+    {{'NOTICIAS.DESCRICAO_FAKE_NEWS'| translate}}
+    <div class="image"></div>
+  </div>
+
+
+  <h1 class="noticias-titulo inner">
+    <span>{{'NOTICIAS.TWITTER' | translate}}</span> {{'NOTICIAS.OFICIAL' | translate}}
+  </h1>
+
+
+  <div class="noticias"
+       *ngIf="noticias.length == 0 && !estadoVazio">
+    <div class="noticia skeleton"
+         *ngFor="let i of [0,1,2,3,4,5]">
+      <div class="flex">
+        <div class="titulo">
+          <ion-skeleton-text style="width: 100px;"
+                             animated></ion-skeleton-text>
+        </div>
+        <div class="horario">
+          <ion-skeleton-text style="width: 100px;"
+                             animated></ion-skeleton-text>
+        </div>
+      </div>
+      <div class="twitter">
+        <ion-skeleton-text style="width: 50px;"
+                           animated></ion-skeleton-text>
+      </div>
+      <div class="texto lines-2">
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+      </div>
+
+      <div class="imagem">
+        <ion-skeleton-text style="width: 100%; height: 100%;"
+                           animated></ion-skeleton-text>
+      </div>
+    </div>
+  </div>
+
+  <div class="noticias"
+       *ngIf="!estadoVazio">
+    <div class="noticia"
+         *ngFor="let noticia of noticias"
+         (click)="openTweet(noticia.expanded_url)">
+      <div class="flex">
+        <div class="titulo">
+          Ministério da Saúde
+        </div>
+        <div class="horario">
+          {{noticia.data}} {{noticia.horario}}
+        </div>
+      </div>
+      <div class="twitter">
+        @minsaude
+      </div>
+      <div class="texto lines-2">
+        {{noticia.texto}}
+      </div>
+      <div class="imagem"
+           *ngIf="noticia?.imagem"
+           [style.background-image]="'url(' + (noticia?.imagem) + ')'">
+      </div>
+    </div>
+    <ion-infinite-scroll (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="circular">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+
+  <div class="estado-vazio"
+       *ngIf="estadoVazio">
+    <div class="imagem">
+    </div>
+
+    <div class="titulo">
+      Não foi possivel carregar as notícias do Twitter
+    </div>
+
+    <div class="conteudo">
+      Verifique a sua conexão com a internet e tente novamente
+    </div>
+
+    <div class="ok ion-activatable"
+         role="button"
+         (click)="recarregar()">
+      RECARREGAR
+    </div>
+  </div>
+
+  <br><br><br><br>
+
+</ion-content>

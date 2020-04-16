@@ -1,0 +1,169 @@
+<ion-content [forceOverscroll]="false">
+
+  <div class="votlar ion-activatable"
+       role="button"
+       (click)="fecharClicked()">
+    <ion-icon name="close-outline"></ion-icon>
+  </div>
+
+  <div class="imagem"></div>
+
+  <div *ngIf="!showPreClinico">
+    <ng-container *ngIf="passo === 1">
+      <div class="conteudo"></div>
+
+      <div class="box">
+        <div class="inner">
+          {{'ATENDIMENTO_PRE_CLINICO_TELEFONE.PASSO_1.TITULO' | translate}}
+        </div>
+
+        <div class="tipo-documento">
+          <ion-input type="text" [(ngModel)]="nome"
+                     placeholder="{{'ATENDIMENTO_PRE_CLINICO_TELEFONE.PASSO_1.PLACEHOLDER' | translate}}"
+                     value="">
+          </ion-input>
+        </div>
+        <div class="cpf">
+          <ion-input type="text" value="" [(ngModel)]="telefone" placeholder="(00) 00000-0000" [brmasker]="{mask:'(00) 00000-0000', len:15}"></ion-input>
+        </div>
+	      <div class="botoes">
+		      <div class="botao ion-activatable"
+		           role="button"
+		           (click)="verificarTelefoneClicked()">
+			      OK
+		      </div>
+	      </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="passo === 2">
+      <div class="box verde">
+        <div class="inner">
+          <ion-icon name="checkmark-outline"></ion-icon>
+          {{'ATENDIMENTO_PRE_CLINICO_TELEFONE.PASSO_2.TITULO' | translate}}
+        </div>
+        <span>
+        {{'ATENDIMENTO_PRE_CLINICO_TELEFONE.PASSO_2.SUBTITULO' | translate}}
+      </span>
+        <div class="botoes">
+          <div class="botao ion-activatable"
+               role="button"
+               (click)="fecharClicked()">
+            OK
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div *ngIf="showPreClinico">
+    <div class="titulo">
+      {{'ATENDIMENTO_PRE_CLINICO.TITULO_PRINCIPAL' | translate}}
+    </div>
+
+    <ng-container *ngIf="passo === 1">
+	  <div class="conteudo">
+		{{'ATENDIMENTO_PRE_CLINICO.SUBTITULO_PRIMEIRA_PARTE' | translate}}<a class="ion-activatable"
+		   role="button"
+		   href="tel:0800 591 8899"> 0800 591 8899 </a>{{'ATENDIMENTO_PRE_CLINICO.SUBTITULO_SEGUNDA_PARTE' | translate}}
+	  </div>
+
+	  <div class="box">
+		<div class="inner">
+		  {{'ATENDIMENTO_PRE_CLINICO.PASSO_1.TITULO' | translate}}
+		</div>
+
+		<div class="botoes">
+		  <div class="botao ion-activatable"
+			   role="button"
+			   (click)="simClicked()">
+			{{'ATENDIMENTO_PRE_CLINICO.PASSO_1.BOTAO_SIM' | translate}}
+		  </div>
+		  <div class="botao nao ion-activatable"
+			   role="button"
+			   (click)="voltarClicked()">
+			{{'ATENDIMENTO_PRE_CLINICO.PASSO_1.BOTAO_NAO' | translate}}
+		  </div>
+		</div>
+	  </div>
+	</ng-container>
+
+	<ng-container *ngIf="passo === 2">
+	  <div class="conteudo"></div>
+
+	  <div class="box">
+		<div class="inner">
+		  {{'ATENDIMENTO_PRE_CLINICO.PASSO_2.TITULO' | translate}}
+		</div>
+
+		<div class="cpf">
+		  <ion-input type="text" value="" [(ngModel)]="atendimento.cpf" placeholder="000.000.000-00"
+		             [brmasker]="{mask:'000.000.000-00', len:14}"></ion-input>
+		  <div class="verificar ion-activatable"
+			   role="button"
+			   (click)="verificarCPFClicked()">
+			<ion-icon name="arrow-forward-outline"></ion-icon>
+		  </div>
+		</div>
+	  </div>
+	  <div class="nao-possuo-cpf ion-activatable"
+		   role="button"
+		   (click)="naoPossuoCPFClicked()">
+		{{'ATENDIMENTO_PRE_CLINICO.PASSO_2.BOTAO_SEM_CPF' | translate}}
+	  </div>
+	</ng-container>
+
+	<ng-container *ngIf="passo === 3">
+	  <div class="box">
+		<div class="inner">
+		  {{'ATENDIMENTO_PRE_CLINICO.PASSO_3.TITULO' | translate}}
+		</div>
+
+		<div class="tipo-documento">
+		  <ion-input type="text" [(ngModel)]="atendimento.tipoDocumento"
+					 placeholder="{{'ATENDIMENTO_PRE_CLINICO.PASSO_3.PLACEHOLDER_1' | translate}}"
+					 value="">
+		  </ion-input>
+		  <ion-input type="text" [(ngModel)]="atendimento.documento"
+					 placeholder="{{'ATENDIMENTO_PRE_CLINICO.PASSO_3.PLACEHOLDER_2' | translate}}"
+					 value="">
+		  </ion-input>
+		</div>
+
+		<div class="botoes">
+		  <div class="botao ion-activatable"
+			   role="button"
+			   (click)="salvarDocumentoGenericoClicked()">
+			OK
+		  </div>
+		</div>
+	  </div>
+	  <div class="nao-possuo-cpf ion-activatable"
+		   role="button"
+		   (click)="possuoCPFClicked()">
+		{{'ATENDIMENTO_PRE_CLINICO.PASSO_3.BOTAO_CPF' | translate}}
+	  </div>
+	</ng-container>
+
+	<ng-container *ngIf="passo === 4">
+	  <div class="box verde">
+		<div class="inner">
+		  <ion-icon name="checkmark-outline"></ion-icon>
+		  {{'ATENDIMENTO_PRE_CLINICO.PASSO_4.TITULO' | translate}}
+		</div>
+		<span>
+		  {{'ATENDIMENTO_PRE_CLINICO.PASSO_4.SUBTITULO' | translate}}
+		</span>
+		<div class="botoes">
+		  <div class="botao ion-activatable"
+			   role="button"
+			   (click)="fecharClicked()">
+			OK
+		  </div>
+		</div>
+	  </div>
+	</ng-container>
+  </div>
+
+  <br>
+</ion-content>

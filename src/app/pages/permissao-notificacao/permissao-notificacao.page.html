@@ -1,0 +1,28 @@
+<ion-content [forceOverscroll]="false">
+
+  <div class="votlar ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    <ion-icon name="close-outline"></ion-icon>
+  </div>
+
+  <div class="imagem">
+  </div>
+
+  <div class="titulo">
+    {{titulo}}
+  </div>
+
+  <div class="conteudo">
+    {{subtitulo}}
+  </div>
+
+  <br>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="habilitarPermissao()">
+    {{textoBotao}}
+  </div>
+
+</ion-content>

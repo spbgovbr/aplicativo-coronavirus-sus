@@ -1,0 +1,56 @@
+<ion-content>
+
+  <div slot="fixed"
+       class="fechar">
+    <div slot="fixed"
+         class="botao ion-activatable"
+         role="button"
+         (click)="enter()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+  <ion-slides #slides
+              pager="true"
+              class="stories-bullets-slides"
+              (ionSlideDidChange)="slideDidChange()">
+
+    <ion-slide *ngFor="let storie of stories">
+      <div class="imagem"
+           [style.background-image]="'url(' + (storie?.imagem?.url) + ')'"></div>
+      <div class="desc">
+        {{storie?.texto}}
+      </div>
+      <div class="space"></div>
+
+      <a *ngIf="storie?.link"
+         [href]="storie?.link"
+         slot="fixed"
+         class="ver-mais ion-activatable"
+         role="button">
+        <ion-icon src="./assets/images/stories/vermais.svg"></ion-icon>
+        <br>
+        {{txtVerMais}}
+      </a>
+
+      <div slot="fixed"
+           class="prev"
+           role="button"
+           (click)="prev()">
+      </div>
+      <div slot="fixed"
+           class="next"
+           role="button"
+           (click)="next()">
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+
+  <div slot="fixed"
+       class="logotipo"
+       aria-hidden="true">
+    <ion-icon src="./assets/images/logotipo.svg"></ion-icon>
+  </div>
+
+</ion-content>

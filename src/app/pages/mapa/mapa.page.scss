@@ -1,0 +1,345 @@
+.header {
+  padding-top: var(--ion-safe-area-top);
+  height: calc(140px + var(--ion-safe-area-top));
+  width: 100%;
+  background-color: rgba(white, .9);
+  z-index: 999;
+  border-bottom: 1px solid #D0E3F4;
+
+
+  .votlar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    ion-icon {
+      font-size: 21px;
+      color: #808080;
+    }
+  }
+
+  .titulo {
+    padding: 0 20px;
+    margin: 20px 0 0 0;
+
+    font-weight: 400;
+    font-size: 22px;
+    color: #16222F;
+    letter-spacing: -0.64px;
+    line-height: 19px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 20px;
+
+  &.card {
+    padding: 0;
+
+    justify-content: space-between;
+
+    .horario {
+      font-weight: 500;
+      font-size: 12px;
+      color: #758899;
+      letter-spacing: 0;
+      text-align: left;
+      line-height: 18px;
+
+      padding: 4px;
+      margin-right: -8px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-icon {
+        margin-left: 4px;
+        font-size: 14px;
+      }
+
+      &.ion-activated:before {
+        background-color: rgba(#808080, .1);
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .aberto,
+  .fechado {
+    font-weight: 700;
+    font-size: 12px;
+    color: #6EB434;
+
+    margin-right: 10px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    &:before {
+      content: '';
+      display: inline;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      background-color: #6EB434;
+    }
+
+    &.fechado {
+      color: #7089A5;
+
+      &:before {
+        content: '';
+        background-color: #7089A5;
+      }
+    }
+  }
+}
+
+.disponibilidade {
+  .linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 12px;
+    color: #758899;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 18px;
+  }
+}
+
+.interacoes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .rotas,
+  .telefone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px 10px 0 0;
+    padding: 0 20px;
+    height: 44px;
+    background: white;
+    border: 1px solid #D0E3F4;
+    box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+    border-radius: 10px;
+
+    &.ion-activated:before {
+      background-color: rgba(#0089FF, .1);
+    }
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #0089FF;
+    letter-spacing: 0;
+    line-height: 18px;
+
+    ion-icon {
+      margin-right: 5px;
+      font-size: 21PX;
+    }
+  }
+}
+
+.mapa {
+  height: 100%;
+}
+
+.mapa-card {
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  margin: 10px;
+  padding: 25px;
+  width: calc(100% - 20px);
+  background: white;
+  border: 1px solid #D8DFEE;
+
+  box-shadow: 0 10px 17px 0 rgba(19, 27, 34, 0.44);
+  border-radius: 30px;
+
+
+  @media (min-width: 540px) {
+    width: 500px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(-50%, 50%, 0);
+    height: 50px;
+    width: 6px;
+    background: #0088FF;
+    box-shadow: 0 3px 8px 0 rgba(0, 136, 255, 0.33);
+    border-radius: 15px;
+  }
+
+  .fechar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+      color: #919EAB;
+      font-size: 30px;
+    }
+
+    &.ion-activated:before {
+      background-color: rgba(#919EAB, .1);
+      border-radius: 10px;
+    }
+  }
+
+  .nome {
+    margin-bottom: 10px;
+    padding-right: 40px;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #16222F;
+    letter-spacing: -0.38px;
+  }
+
+  a {
+    color: #0089EC;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: bold;
+    text-decoration: none;
+
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      margin-right: 5px;
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      //background-image: url('../../assets/images/mapa/telefone.svg');
+    }
+  }
+
+  .descricaoTipo {
+    font-size: 12px;
+    color: #919EAB;
+    line-height: 21px;
+    font-weight: bold;
+  }
+
+  .endereco {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #16222F;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+  }
+}
+
+
+.estado-vazio {
+  // padding-top: calc(180px + var(--ion-safe-area-top));
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // padding-bottom: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate3d(0, -40%, 0);
+  width: calc(100% - 40px);
+
+  .imagem {
+    margin: 10px auto;
+    width: 160px;
+    height: 160px;
+    background-size: 160px auto;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/images/estado-vazio/mapa.svg');
+  }
+
+  .titulo {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 22.2px;
+    color: #16222F;
+    letter-spacing: -0.5px;
+    text-align: center;
+    line-height: 30px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .conteudo {
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #6B8097;
+    letter-spacing: -0.3px;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  .ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    background: #0088FF;
+    box-shadow: 0 1px 4px 0 rgba(31, 70, 88, 0.08);
+    border-radius: 10px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+}

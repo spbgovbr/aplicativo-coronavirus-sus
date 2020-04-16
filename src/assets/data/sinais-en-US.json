@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "objectId": "IGxEXkHZYg",
+      "nome": "Feeling faint",
+      "createdAt": "2020-03-20T23:10:57.229Z",
+      "updatedAt": "2020-03-20T23:12:47.525Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "i0986NSxTK",
+      "nome": "Low pressure",
+      "createdAt": "2020-03-20T23:11:11.558Z",
+      "updatedAt": "2020-03-20T23:12:54.671Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "CfbDRoT4yA",
+      "nome": "Pallor",
+      "createdAt": "2020-03-20T23:11:26.155Z",
+      "updatedAt": "2020-03-20T23:13:12.912Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "xNX7ErK5tp",
+      "nome": "Purple mouth or fingertips",
+      "createdAt": "2020-03-20T23:11:41.923Z",
+      "updatedAt": "2020-03-20T23:13:20.425Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "d7hFwH2G8h",
+      "nome": "Breathing too fast",
+      "createdAt": "2020-03-20T23:11:58.437Z",
+      "updatedAt": "2020-03-20T23:13:27.327Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    },
+    {
+      "objectId": "iwHxKRmQgN",
+      "nome": "None of these symptoms",
+      "createdAt": "2020-03-20T23:12:31.931Z",
+      "updatedAt": "2020-03-20T23:13:48.317Z",
+      "idioma": {
+        "__type": "Relation",
+        "className": "idioma"
+      }
+    }
+  ]
+}

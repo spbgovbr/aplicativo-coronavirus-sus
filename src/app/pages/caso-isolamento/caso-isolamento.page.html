@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="header"
+       slot="fixed">
+    <div class="votlar ion-activatable"
+         role="button"
+         (click)="voltarClicked()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="imagem" [innerHTML]="'CASO_ISOLAMENTO.TITULO_IMAGEM' | translate"></div>
+
+<!--  <div class="veredito" [innerHTML]="'CASO_ISOLAMENTO.TEXTO_DESTACADO' | translate"></div>-->
+
+  <div class="pre-itens" [innerHTML]="'CASO_ISOLAMENTO.TITULO_DICAS' | translate"></div>
+
+  <div class="item" [innerHTML]="'CASO_ISOLAMENTO.DICA1' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_ISOLAMENTO.DICA2' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_ISOLAMENTO.DICA3' | translate"></div>
+  <div class="item" [innerHTML]="'CASO_ISOLAMENTO.DICA4' | translate"></div>
+
+  <div class="cards">
+    <div class="card-1 ion-activatable"
+         role="button"
+         (click)="card1()">
+      <div class="icone"></div>
+      <div class="titulo">{{'CASO_ISOLAMENTO.CARDS.INFECTADO' | translate}}</div>
+      <div class="sub-titulo">{{'CASO_ISOLAMENTO.CARDS.SUBTITULO' | translate}}</div>
+    </div>
+    <div class="card-2 ion-activatable"
+         role="button"
+         (click)="card2()">
+      <div class="icone"></div>
+      <div class="titulo">{{'CASO_ISOLAMENTO.CARDS.CUIDADOR' | translate}}</div>
+      <div class="sub-titulo">{{'CASO_ISOLAMENTO.CARDS.SUBTITULO' | translate}}</div>
+    </div>
+  </div>
+
+  <div class="ok ion-activatable"
+       role="button"
+       (click)="voltarClicked()">
+    OK
+  </div>
+
+</ion-content>

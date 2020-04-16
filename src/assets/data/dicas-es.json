@@ -1,0 +1,117 @@
+{
+  "results": [
+    {
+      "createdAt": "2020-03-21T02:23:09.373Z",
+      "imagem": {
+        "url": "assets/images/dicas/fakenews.svg"
+      },
+      "link": "https://www.saude.gov.br/fakenews",
+      "objectId": "WCSJiGpyO2",
+      "ordem": 9,
+      "texto": "Para evitar la propagación de mentiras sobre el coronavirus, asegúrese de que los mensajes que recibe sean ciertos antes de transmitirlos.\n<br /> Busque el canal Saúde sem Fake News, en www.saude.gov.br/fakenews. Allí, encontrará respuestas oficiales y actualizadas.\n<br /> Si no puede encontrar su pregunta en el sitio web, envíe un mensaje a WhatsApp: (61) 99289-4640.\n<br /> Disque Saúde 136 también está abierto las 24 horas del día, los siete días de la semana, y puede responder preguntas sobre el coronavirus. La llamada es gratis.",
+      "titulo": "Noticias falsas",
+      "updatedAt": "2020-03-21T20:53:27.491Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:22:12.391Z",
+      "imagem": {
+        "url": "assets/images/dicas/viajantes.svg"
+      },
+      "link": "http://plataforma.saude.gov.br/novocoronavirus/",
+      "objectId": "h1HBjNAF7g",
+      "ordem": 8,
+      "texto": "Evalúe la necesidad real de viajar a un lugar con los casos COVID-19 y posponga si es posible. Si es inevitable, prevenga y siga las pautas de las autoridades sanitarias locales.\n<br /> <br />\nSi ha regresado de un viaje con un caso de COVID-19, tenga en cuenta su estado de salud, especialmente en los primeros 14 días después de regresar. Si experimenta síntomas como fiebre, tos y dificultad para respirar, busque atención médica e informe su historial de viaje.\n<br /> <br />\nY no olvide tomar todas las medidas de precaución y prevención recomendadas, practicando la etiqueta de respiración y, principalmente, reforzando el lavado de manos con agua y jabón o limpiándose con gel de alcohol al 70%.\n<br /> <br />\nSiga los datos de la enfermedad del coronavirus 2019 (COVID-19) en Brasil y en todo el mundo, a través de la Plataforma Integrada de Vigilancia Sanitaria (IVIS) del Ministerio de Salud.",
+      "titulo": "Información para viajeros",
+      "updatedAt": "2020-03-21T20:53:25.803Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:24:04.363Z",
+      "imagem": {
+        "url": "assets/images/dicas/vacina.svg"
+      },
+      "link": "https://www.saude.gov.br/noticias/agencia-saude/46257-mapa-hospitais-referencia-novo-coronavirus",
+      "objectId": "sEHKBbycCh",
+      "ordem": 7,
+      "texto": "Hasta la fecha, no hay vacuna disponible contra COVID-19.\n<br /> <br />\nExiste un tratamiento disponible que evita que la enfermedad empeore y reduce las molestias. Sin embargo, todavía no existe un medicamento específico para eliminar el coronavirus.\n<br /> <br />\nLa gran mayoría de los casos son autolimitados, es decir, se curan espontáneamente. Según la Organización Mundial de la Salud, alrededor del 80% de los casos son leves. La mayor preocupación es cuando la enfermedad afecta a personas mayores o personas con enfermedades crónicas (hipertensión, enfermedades cardíacas, diabetes, etc.), en las que aumenta el riesgo de complicaciones. Las personas con enfermedades graves deben ser hospitalizadas.\n<br /> <br />\nLos casos graves deben remitirse a un hospital de referencia para su aislamiento y tratamiento. Los casos leves deben ser monitoreados por la Atención Primaria de Salud (APS) y las medidas de precaución en el hogar instituidas.",
+      "titulo": "¿Hay una vacuna, medicamento o tratamiento?",
+      "updatedAt": "2020-03-21T20:53:18.744Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:24:50.226Z",
+      "imagem": {
+        "url": "assets/images/dicas/diagnostico.svg"
+      },
+      "objectId": "8CwgyBtI2y",
+      "ordem": 6,
+      "texto": "El diagnóstico de coronavirus se realiza mediante la recolección de materiales respiratorios de pacientes clasificados como casos sospechosos de COVID-19. Las muestras se envían a los Laboratorios Centrales de Salud Pública (Lacen) de los Estados para realizar exámenes de biología molecular para detectar ARN viral.",
+      "titulo": "¿Cómo se hace el diagnóstico?",
+      "updatedAt": "2020-03-21T20:53:10.782Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:27:18.665Z",
+      "imagem": {
+        "url": "assets/images/dicas/vigilancia.svg"
+      },
+      "objectId": "6mV8zBqXtv",
+      "ordem": 5,
+      "texto": "Todos los casos deben ser registrados por los servicios de salud públicos y privados en Brasil, utilizando el formulario electrónico, dentro de las primeras 24 horas después de la sospecha clínica.\nA partir del 1 de marzo de 2020, entraron en vigencia las siguientes definiciones operativas para la salud pública nacional.\n<br /> <br />\n# 1 CASO SOSPECHADO DE ENFERMEDAD DE CORONAVIRUS 2019 (COVID-19)\nSITUACIÓN 1: Fiebre y al menos un signo o síntoma respiratorio (tos, dificultad para respirar, aleteo de las alas nasales, entre otros) e historial de viajes a un área con transmisión local, según la OMS, en los últimos 14 días antes de la aparición de signos o síntomas O\nSITUACIÓN 2: Fiebre y al menos un signo o síntoma respiratorio (tos, dificultad para respirar, aleteo nasal, entre otros) y antecedentes de contacto cercano con un caso sospechoso de coronavirus (COVID-19), en los últimos 14 días antes de la aparición signos o síntomas *.\n<br /> <br />\n# 2 CASO PROBABLE DE ENFERMEDAD DE CORONAVIRUS 2019 (COVID-19)\nContacto cercano en el hogar de un caso confirmado por laboratorio, presentando fiebre Y / O síntomas respiratorios, dentro de los 14 días posteriores al último contacto con el paciente.\n<br /> <br />\n# 3 CASO CONFIRMADO DE ENFERMEDAD DE CORONAVIRUS 2019 (COVID-19)\nA) CRITERIO DE LABORATORIO: Resultado positivo en RT-PCR, por el protocolo Charité.\nB) CRITERIO CLÍNICO-EPIDEMIOLÓGICO: Contacto cercano a casa de un caso confirmado por laboratorio, presentando fiebre y / o cualquier síntoma respiratorio, dentro de los 14 días posteriores al último contacto con el paciente y para el cual la investigación de laboratorio específica no fue posible.",
+      "titulo": "¿Cómo funciona la vigilancia y notificación de casos en Brasil?",
+      "updatedAt": "2020-03-21T20:53:00.182Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:19:58.429Z",
+      "imagem": {
+        "url": "assets/images/dicas/mascara.svg"
+      },
+      "objectId": "EgHDTCM1oj",
+      "ordem": 4,
+      "texto": "\nUse una máscara si está tosiendo o estornudando para evitar transmitir virus a otras personas.\n<br /> <br />\nPara personas sanas, use una máscara solo si está cuidando a una persona sospechosa de tener una infección por coronavirus.\n<br /> <br />\nLas máscaras son efectivas solo cuando se usan en combinación con la limpieza frecuente de las manos con agua y jabón o se desinfectan con gel de alcohol al 70%.\n<br /> <br />\nAl usar una máscara, uno debe saber cómo usarla y desecharla adecuadamente.",
+      "titulo": "¿Cuándo usar una máscara?",
+      "updatedAt": "2020-03-21T20:52:54.061Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:26:17.207Z",
+      "imagem": {
+        "url": "assets/images/dicas/previnir.svg"
+      },
+      "objectId": "10hyzzvCiK",
+      "ordem": 3,
+      "texto": "Se deben adoptar medidas generales de prevención y etiqueta respiratoria, tales como:\n<li> - Lávese las manos regularmente y completamente con agua y jabón, o límpielas con gel de alcohol al 70%. De esa manera, es posible eliminar los virus que puedan estar en sus manos. </li>\n<li> - Mantenga al menos 2 metros entre usted y cualquier persona que tosa o estornude. De esa manera, es posible disminuir el riesgo de respirar gotas respiratorias que contienen virus, si la persona está enferma. </li>\n<li> - Evite tocarse los ojos, la nariz y la boca con las manos sin lavar. De esta manera, es posible evitar que las manos contaminadas transfieran virus a los ojos, la nariz o la boca, lo que lo enfermará. </li>\n<li> - Asegúrese de que usted y las personas que lo rodean practiquen una buena etiqueta de respiración. Esto significa cubrirse la boca y la nariz con el antebrazo o con un pañuelo desechable al toser o estornudar. Luego, deseche el tejido usado inmediatamente. De esa manera protege a las personas que lo rodean de virus como resfriados, gripe y COVID-19. </li>\n<li> - Mantenga ambientes bien ventilados y evite compartir artículos personales, con cubiertos, platos, vasos o botellas. Esto ayuda a prevenir la propagación de enfermedades respiratorias. </li>",
+      "titulo": "¿Cómo prevenirlo?",
+      "updatedAt": "2020-03-21T20:52:47.104Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:25:36.650Z",
+      "imagem": {
+        "url": "assets/images/dicas/transmite.svg"
+      },
+      "objectId": "ZqpDuFEOws",
+      "ordem": 2,
+      "texto": "Expulsado de la nariz y la boca cuando una persona infectada tose, estornuda o habla, incluso cuando tiene síntomas leves o no se siente enferma. Estas gotas se pueden depositar en objetos o superficies durante horas, y otras personas pueden adquirir el virus al tocar estos objetos o superficies contaminados y luego tocarse los ojos, la nariz o la boca. También pueden infectarse al respirar directamente las gotas respiratorias de una persona infectada cuando tose o estornuda o por contacto directo, como tocarse o darse la mano. Por lo tanto, es importante pararse a más de 2 metros de una persona enferma y lavarse las manos con agua y jabón o gel de alcohol.",
+      "titulo": "¿Cómo se transmite?",
+      "updatedAt": "2020-03-21T20:52:41.330Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:20:33.144Z",
+      "imagem": {
+        "url": "assets/images/dicas/sintomas.svg"
+      },
+      "objectId": "fJ2P2sNqc4",
+      "ordem": 1,
+      "texto": "La enfermedad por coronavirus 2019 (Covid-19) es similar a una \"gripe\". Generalmente es una enfermedad leve o moderada, pero algunos casos pueden volverse graves. Los síntomas más comunes son: fiebre, tos y / o dificultad para respirar.\n<br /> Algunos pacientes pueden experimentar cansancio, dolor corporal, malestar general, congestión nasal, secreción nasal, dolor de garganta o dolor en el pecho. Estos síntomas generalmente son leves y comienzan gradualmente.\n<br /> Algunas personas están infectadas, pero no tienen síntomas o tienen síntomas leves, casi imperceptibles.\n<br /> La mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin necesidad de un tratamiento especial. Aproximadamente 1 de cada 6 personas que enferman con COVID-19 pueden tener la forma grave de la enfermedad.\n<br /> Las personas mayores con ciertas afecciones crónicas, como presión arterial alta, enfermedades cardiovasculares y diabetes, tienen un mayor riesgo de desarrollar la forma grave.\n<br /> Las personas con fiebre, tos y dificultad para respirar deben buscar atención médica inmediata. Se debe usar una máscara como una forma de prevenir la dispersión de las gotas respiratorias al toser, estornudar o hablar, combinado con el lavado o la higiene de las manos. Después del tratamiento, se deben seguir las pautas médicas, evitando los entornos públicos o laborales frecuentes, buscando permanecer en casa hasta que desaparezcan los síntomas. Esto evitará la propagación de virus y la aparición de nuevas infecciones.",
+      "titulo": "¿Cuales son los síntomas?",
+      "updatedAt": "2020-03-21T20:52:32.558Z"
+    },
+    {
+      "createdAt": "2020-03-21T02:21:19.911Z",
+      "imagem": {
+        "url": "assets/images/dicas/oquee.svg"
+      },
+      "objectId": "qBYptOhQdn",
+      "ordem": 0,
+      "texto": "\nLos coronavirus son una gran familia de virus que pueden causar desde resfriados comunes hasta enfermedades respiratorias más graves que son importantes para la salud pública, como el Síndrome Respiratorio Agudo Severo (SARS) y el Síndrome Respiratorio del Medio Oriente (MERS). El nuevo coronavirus descubierto en diciembre de 2019 en China (SARS-CoV-2) es el agente causante de la enfermedad de coronavirus 2019 (COVID-19).",
+      "titulo": "¿Qué son los coronavirus?",
+      "updatedAt": "2020-03-21T20:52:27.309Z"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<ion-content [scrollEvents]="true"
+             (ionScroll)="onScroll($event)">
+
+  <div class="background"></div>
+
+  <div class="header desktop-hidden"
+       slot="fixed"
+       [ngClass]="{'change-header': changeHeader }">
+    <div class="logotipo"
+         aria-hidden="true">
+      <ion-icon src="./assets/images/logotipo.svg"></ion-icon>
+    </div>
+
+    <app-idiomas *ngIf="language"
+                 [language]="language"
+                 (idiomaSelected)="idiomaSelected($event)"></app-idiomas>
+    <div class="background"
+         [ngClass]="{'change-header': changeHeader }"></div>
+  </div>
+
+
+  <div class="conteudo">
+    <div class="avaliacao">
+      <h1>
+        {{'INICIO.SAUDACAO' | translate}}
+      </h1>
+      <h2>
+        {{'INICIO.PERGUNTA_SAUDACAO' | translate}}
+      </h2>
+      <div class="botoes">
+        <div class="bem ion-activatable"
+             role="button"
+             (click)="estouBemClicked()">
+          <ion-icon slot="start"
+                    src="./assets/images/inicio/bem.svg"></ion-icon>
+          {{'INICIO.BEM' | translate}}
+        </div>
+        <div class="mal ion-activatable"
+             role="button"
+             (click)="malClicked()">
+          <ion-icon slot="start"
+                    src="./assets/images/inicio/mal.svg"></ion-icon>
+          {{'INICIO.MAL' | translate}}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="conteudo-inner">
+
+      <div class="ubs-noticias">
+        <div class="ubs ion-activatable"
+             role="button"
+             (click)="openMapaPage()">
+          <div class="icone"></div>
+          <div class="titulo">{{'INICIO.UBS.TITULO' | translate}}</div>
+          <div class="sub-titulo">{{'INICIO.UBS.SUBTITULO' | translate}}</div>
+        </div>
+        <div class="noticias ion-activatable"
+             role="button"
+             (click)="verNoticias()">
+          <div class="icone"></div>
+          <div class="titulo">{{'INICIO.NOTICIAS.TITULO' | translate}}</div>
+          <div class="sub-titulo">{{'INICIO.NOTICIAS.SUBTITULO' | translate}}</div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="dicas-stories">
+        <div>
+          <h1 class="dicas-titulo">
+            <span>{{'DICAS.TITULO_PRIMARIO' | translate}}</span> {{'DICAS.TITULO_SECUNDARIO' | translate}}
+          </h1>
+          <h2 class="dicas-sub-titulo">
+            {{'DICAS.SUBTITULO' | translate}}
+          </h2>
+        </div>
+
+        <div class="stories-wrapper"
+             *ngIf="stories.length > 0">
+          <div class="stories ion-activatable"
+               [ngClass]="{'lido': qtdStoriesNaoLidos <= 0 }"
+               role="button"
+               (click)="storiesClicked()">
+            <div class="stories-inner"
+                 [style.background-image]="'url(' + (storie) + ')'"></div>
+          </div>
+          <div class="numero"
+               *ngIf="qtdStoriesNaoLidos > 0">
+            {{qtdStoriesNaoLidos}}
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="dicas"
+           *ngIf="dicas?.length">
+        <div class="dica ion-activatable"
+             role="button"
+             *ngFor="let dica of dicas"
+             (click)="openDetalheDica(dica)">
+          <div class="icone"
+               aria-hidden="true"
+               [style.background-image]="'url(' + (dica?.imagem.url) + ')'"></div>
+          {{dica?.titulo}}
+        </div>
+      </div>
+
+      <div class="dicas"
+           *ngIf="!dicas?.length">
+        <div class="dica skeleton"
+             *ngFor="let i of [0,1,2,3]">
+          <ion-skeleton-text animated
+                             style="width: 74px; height: 74px; border-radius: 74px;"></ion-skeleton-text>
+          <ion-skeleton-text animated
+                             style="width: 100%; height: 30px;"></ion-skeleton-text>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="ver-mais-dicas ion-activatable"
+           role="button"
+           (click)="verMaisDicas()">
+        {{'INICIO.VER_MAIS' | translate}}
+      </div>
+
+      <div class="logotipo-bottom"
+           aria-hidden="true">
+        <ion-icon src="./assets/images/logotipo.svg"></ion-icon>
+      </div>
+
+      <div class="versao">
+        {{'INICIO.VERSAO' | translate}} {{version}}
+      </div>
+
+      <div class="logotipo-datasus"
+           aria-hidden="true">
+        <ion-icon src="./assets/images/inicio/datasus.svg"></ion-icon>
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>
