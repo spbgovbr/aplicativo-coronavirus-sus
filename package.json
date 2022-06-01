@@ -63,7 +63,7 @@
     "phonegap-plugin-multidex": "1.0.0",
     "phonegap-plugin-push": "2.3.0",
     "rxjs": "~6.5.1",
-    "sharp": "^0.25.1",
+    "sharp": "^0.30.5",
     "tslib": "^1.9.0",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "5.0.4",
     "zone.js": "~0.9.1"
